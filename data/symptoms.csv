@@ -1,0 +1,142 @@
+sm_id,symptom,sp_id
+sm_001,"Chest pain",sp_001
+sm_002,Presocere,sp_001
+sm_003,"Fullness or discomfort(Angina)",sp_001
+sm_004,"Nausea and cold sweats",sp_001
+sm_005,"Difficulty breathing and dizziness",sp_001
+sm_006,"Discomfort in other areas of body:",sp_001
+sm_007,"Pain the arms,neck,jaw,upper abdomen or back",sp_001
+sm_010,"Chronic bad breath",sp_002
+sm_011,"Sudden sensitivity to hot or cold temperature",sp_002
+sm_012,"Pain on toothache",sp_002
+sm_013,"Loose teeth",sp_002
+sm_014,"Receding gums",sp_002
+sm_015,"Pain with chewing and biting",sp_002
+sm_016,"Swelling of face and cheek",sp_002
+sm_017,"Clicking of jaw",sp_002
+sm_018,"Broken teeth",sp_002
+sm_019,"Frequent dry mouth",sp_002
+sm_020,"Raised bumps that are red or white",sp_003
+sm_021,Rash,sp_003
+sm_022,Itching,sp_003
+sm_023,"Scaly or rough skin",sp_003
+sm_024,"Peeling skin",sp_003
+sm_025,"Hair loss",sp_003
+sm_026,"Burning of eye disease",sp_004
+sm_028,"Eye redness",sp_004
+sm_029,"Sensitivity to light",sp_004
+sm_030,"Mucous production in our around the eyes",sp_004
+sm_031,"Blurred vision",sp_004
+sm_032,"Eye Fatigue",sp_004
+sm_033,"The issue in wearing contact lenses",sp_004
+sm_034,"Lump in the neck",sp_005
+sm_035,"Bose bleed",sp_005
+sm_036,"Sculling on ulcer in the mouth",sp_005
+sm_037,"Hoarse voice",sp_005
+sm_038,"Difficulty in Swallowing",sp_005
+sm_039,"Pain the ear",sp_005
+sm_040,"Sore throat",sp_005
+sm_041,Coughing,sp_005
+sm_042,Headaches,sp_005
+sm_043,Nausea,sp_005
+sm_044,"Nasal obstruction",sp_005
+sm_045,"Bleeding between periods",sp_006
+sm_046,"Burning Sensation during Urination",sp_006
+sm_047,"Abnormal vaginal bleeding",sp_006
+sm_048,"Bleeding after menopause",sp_006
+sm_051,"Vaginal discharge",sp_006
+sm_052,"Irregular periods",sp_006
+sm_053,Palpitations,sp_006
+sm_054,Dyspnoea,sp_006
+sm_055,"Peripheral oedema",sp_006
+sm_056,Nausea,sp_006
+sm_057,Vomiting,sp_006
+sm_058,Pritis,sp_006
+sm_059,"Bloating and excess (****)",sp_007
+sm_060,Constipation,sp_007
+sm_061,Diarrhea,sp_007
+sm_062,Heartburn,sp_007
+sm_063,"Nausea and vomiting",sp_007
+sm_064,"Pain the belly",sp_007
+sm_065,"Swallowing Problems",sp_007
+sm_066,"Weight gain or loss",sp_007
+sm_067,"Skin and eyes that appear Yellowish(Jaundice)",sp_008
+sm_068,"Abdominal pain and swelling",sp_008
+sm_069,"Swelling in the legs and ankles",sp_008
+sm_070,"Itchy skin",sp_008
+sm_071,"Dark urine color",sp_008
+sm_072,"Pole stool color",sp_008
+sm_073,"Chronic Fatigue",sp_008
+sm_074,"Loss of Appetite",sp_008
+sm_075,"Tendency to Bruise",sp_008
+sm_076,Fatigue,sp_009
+sm_077,"Shortness of breath",sp_009
+sm_079,"Muscle weakness",sp_009
+sm_080,"A fast heart beat",sp_009
+sm_081,"Dmoric injection",sp_009
+sm_082,"Unexplained weight loss",sp_009
+sm_083,Malaise,sp_009
+sm_086,"Skin that bruises",sp_009
+sm_088,"Weight loss and poor appetite",sp_011
+sm_091,Tiredness,sp_011
+sm_092,"Blood in urine",sp_011
+sm_093,"Difficulty sleeping(insomnia)",sp_011
+sm_094,"Itchy sick",sp_011
+sm_095,Headache,sp_011
+sm_096,"Foamy urine",sp_011
+sm_098,"Partial or complete paralysis",sp_012
+sm_099,"Muscle weakness",sp_012
+sm_100,"Partial or complete loss of sensation",sp_012
+sm_101,Seizures,sp_012
+sm_102,"Difficulty reading writing",sp_012
+sm_103,"Poor cognitive abilities",sp_012
+sm_104,"Unexplained pain",sp_012
+sm_105,"Decreased alertness",sp_012
+sm_106,Headaches,sp_012
+sm_107,"Blurry vision",sp_012
+sm_108,Fatigue,sp_012
+sm_109,"Change in behavior",sp_012
+sm_110,"Numbness in the legs or arms",sp_012
+sm_111,"Slurred speech",sp_012
+sm_112,"Memory loss",sp_012
+sm_113,Apathy,sp_012
+sm_114,Anxiety,sp_012
+sm_115,Agitation,sp_012
+sm_116,Vomition,sp_012
+sm_117,Nausea,sp_012
+sm_119,"Fatigue combined with joint pain or swelling",sp_013
+sm_120,"Joint stiffness & limited range of motion",sp_013
+sm_121,"Muscle spasms",sp_013
+sm_122,"Numbness tingling or weakness",sp_013
+sm_124,"Swelling of injured or disease area",sp_013
+sm_126,"Feeling sad or down",sp_014
+sm_128,"Excessive mood change of highs & lows",sp_014
+sm_131,Stress,sp_014
+sm_132,"Problems with alcohol or drug use",sp_014
+sm_133,"Major changes in eating habits",sp_014
+sm_134,"Excessive anger,hostility or violence",sp_014
+sm_135,"suicidal thinking",sp_014
+sm_136,Anxiety,sp_014
+sm_137,"Excessive thirst or hunger",sp_015
+sm_138,Fatigue,sp_015
+sm_139,"Frequent coronation",sp_015
+sm_140,"Unexplained weight loss or gain",sp_015
+sm_141,Fever,sp_016
+sm_142,"Runny or stuffy nose",sp_016
+sm_143,Coughing,sp_016
+sm_144,"Diaper nose",sp_016
+sm_145,Dicalue,sp_016
+sm_146,"Difficult or noisy breathing",sp_016
+sm_147,"Ege irritation",sp_016
+sm_148,Headache,sp_016
+sm_149,Vornity,sp_016
+sm_151,"Mouth erres",sp_016
+sm_152,Stomachache,sp_016
+sm_153,"Swollenen glands",sp_016
+sm_154,"Blood in your urine",sp_017
+sm_155,"poor bladder control",sp_017
+sm_157,"Fallen bladder protausion",sp_017
+sm_158,Hernia,sp_017
+sm_159,"Male sexual promlem",sp_017
+sm_160,"Overactive bladder",sp_017
+sm_161,"Enlarged prostate",sp_017

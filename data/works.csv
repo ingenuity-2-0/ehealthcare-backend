@@ -1,0 +1,257 @@
+d_id,h_id,Consulting_hour_start,Consulting_hour_end,Consulting_fees,Consulting_days
+d_035,h_0001,"6:00 PM","10:00 PM",500,Friday
+d_061,h_0002,"12:00 PM","4:00 PM",700,Tuesday
+d_074,h_0002,"10:00 AM","2:00 PM",900,Wednesday
+d_130,h_0002,"8:00 PM","12:00 AM",1200,Tuesday
+d_138,h_0002,"2:00 PM","6:00 PM",700,"Sunday, Monday, Tuesday"
+d_139,h_0002,"10:00 AM","2:00 PM",1300,Tuesday
+d_043,h_0003,"8:00 AM","12:00 PM",600,Tuesday
+d_048,h_0003,"8:00 AM","12:00 PM",1400,Saturday
+d_097,h_0004,"4:00 PM","8:00 PM",800,Friday
+d_145,h_0004,"8:00 PM","12:00 AM",1100,"Thursday,Sunday"
+d_147,h_0004,"4:00 PM","8:00 PM",400,Wednesday
+d_055,h_0005,"8:00 AM","12:00 PM",1200,Tuesday
+d_129,h_0005,"4:00 PM","8:00 PM",1200,"Sunday, Monday, Tuesday"
+d_130,h_0005,"6:00 PM","10:00 PM",1000,"Thursday,Sunday"
+d_157,h_0005,"10:00 AM","2:00 PM",1000,Tuesday
+d_037,h_0006,"8:00 PM","12:00 AM",1100,Friday
+d_052,h_0006,"12:00 PM","4:00 PM",800,"Thursday,Sunday"
+d_061,h_0006,"8:00 AM","12:00 PM",600,Wednesday
+d_073,h_0006,"8:00 PM","12:00 AM",500,"Sunday, Monday, Tuesday"
+d_084,h_0006,"6:00 PM","10:00 PM",400,"Sunday, Monday, Tuesday"
+d_099,h_0006,"8:00 AM","12:00 PM",300,"Thursday,Sunday"
+d_102,h_0006,"8:00 PM","12:00 AM",800,Friday
+d_103,h_0006,"4:00 PM","8:00 PM",1000,"Sunday, Monday, Tuesday"
+d_108,h_0006,"10:00 AM","2:00 PM",1200,Friday
+d_123,h_0006,"4:00 PM","8:00 PM",1000,Wednesday
+d_138,h_0007,"2:00 PM","6:00 PM",700,"Sunday, Monday, Tuesday"
+d_139,h_0007,"4:00 PM","8:00 PM",900,"Sunday, Monday, Tuesday"
+d_060,h_0008,"2:00 PM","6:00 PM",1400,Wednesday
+d_147,h_0008,"8:00 PM","12:00 AM",1100,"Friday, Thursday"
+d_002,h_0008,"8:00 PM","12:00 AM",1000,"Thursday,Sunday"
+d_026,h_0008,"8:00 PM","12:00 AM",900,Wednesday
+d_027,h_0008,"2:00 PM","6:00 PM",500,Friday
+d_029,h_0008,"6:00 PM","10:00 PM",1100,Saturday
+d_079,h_0008,"2:00 PM","6:00 PM",1200,Wednesday
+d_083,h_0008,"6:00 PM","10:00 PM",1000,"Thursday,Sunday"
+d_087,h_0008,"6:00 PM","10:00 PM",1000,"Thursday,Sunday"
+d_097,h_0008,"10:00 AM","2:00 PM",1300,Tuesday
+d_109,h_0008,"12:00 PM","4:00 PM",600,"consulting day"
+d_110,h_0008,"8:00 AM","12:00 PM",400,Friday
+d_121,h_0008,"12:00 PM","4:00 PM",600,"Friday, Thursday"
+d_021,h_0008,"2:00 PM","6:00 PM",900,"Sunday, Monday, Tuesday"
+d_074,h_0008,"12:00 PM","4:00 PM",500,Friday
+d_086,h_0008,"2:00 PM","6:00 PM",900,"Thursday,Sunday"
+d_100,h_0008,"8:00 AM","12:00 PM",800,"Sunday, Monday, Tuesday"
+d_143,h_0008,"6:00 PM","10:00 PM",1000,"Thursday,Sunday"
+d_154,h_0008,"6:00 PM","10:00 PM",1300,Saturday
+d_124,h_0008,"4:00 PM","8:00 PM",400,Wednesday
+d_081,h_0008,"6:00 PM","10:00 PM",300,"Thursday,Sunday"
+d_159,h_0008,"4:00 PM","8:00 PM",1100,Friday
+d_145,h_0008,"8:00 AM","12:00 PM",400,Wednesday
+d_023,h_0008,"12:00 PM","4:00 PM",600,Wednesday
+d_120,h_0008,"8:00 AM","12:00 PM",1200,Friday
+d_134,h_0008,"2:00 PM","6:00 PM",1100,"Thursday,Sunday"
+d_068,h_0008,"8:00 PM","12:00 AM",1400,Saturday
+d_072,h_0008,"12:00 PM","4:00 PM",1300,"Sunday, Monday, Tuesday"
+d_152,h_0008,"12:00 PM","4:00 PM",1000,"Thursday,Sunday"
+d_035,h_0009,"2:00 PM","6:00 PM",1200,Friday
+d_057,h_0009,"2:00 PM","6:00 PM",1300,Saturday
+d_131,h_0009,"10:00 AM","2:00 PM",1400,Saturday
+d_150,h_0009,"6:00 PM","10:00 PM",900,Saturday
+d_148,h_0009,"8:00 AM","12:00 PM",500,Friday
+d_077,h_0010,"6:00 PM","10:00 PM",500,"Thursday,Sunday"
+d_039,h_0011,"8:00 PM","12:00 AM",800,"Thursday,Sunday"
+d_065,h_0011,"6:00 PM","10:00 PM",1200,Friday
+d_091,h_0011,"2:00 PM","6:00 PM",900,Tuesday
+d_115,h_0011,"2:00 PM","6:00 PM",500,Wednesday
+d_038,h_0011,"12:00 PM","4:00 PM",700,"Sunday, Monday, Tuesday"
+d_133,h_0011,"8:00 PM","12:00 AM",500,Friday
+d_024,h_0011,"10:00 AM","2:00 PM",1100,Wednesday
+d_133,h_0011,"8:00 AM","12:00 PM",1100,Wednesday
+d_033,h_0011,"8:00 PM","12:00 AM",1000,"Friday, Thursday"
+d_036,h_0011,"8:00 AM","12:00 PM",700,Friday
+d_155,h_0011,"8:00 PM","12:00 AM",700,"Friday, Thursday"
+d_080,h_0011,"2:00 PM","6:00 PM",900,"Sunday, Monday, Tuesday"
+d_017,h_0012,"8:00 AM","12:00 PM",1000,"Sunday, Monday, Tuesday"
+d_055,h_0008,"10:00 AM","2:00 PM",700,Wednesday
+d_079,h_0013,"12:00 PM","4:00 PM",900,"Sunday, Monday, Tuesday"
+d_026,h_0013,"12:00 PM","4:00 PM",800,"Thursday,Sunday"
+d_110,h_0014,"6:00 PM","10:00 PM",800,Tuesday
+d_058,h_0015,"4:00 PM","8:00 PM",800,Friday
+d_092,h_0015,"4:00 PM","8:00 PM",700,"Thursday,Sunday"
+d_151,h_0015,"2:00 PM","6:00 PM",1000,Friday
+d_022,h_0016,"12:00 PM","4:00 PM",1400,"Sunday, Monday, Tuesday"
+d_036,h_0017,"10:00 AM","2:00 PM",400,Friday
+d_128,h_0017,"12:00 PM","4:00 PM",1200,Wednesday
+d_152,h_0017,"4:00 PM","8:00 PM",1100,Saturday
+d_146,h_0018,"8:00 PM","12:00 AM",1100,Tuesday
+d_126,h_0019,"10:00 AM","2:00 PM",1300,"Thursday,Sunday"
+d_012,h_0020,"8:00 AM","12:00 PM",300,"Sunday, Monday, Tuesday"
+d_127,h_0021,"12:00 PM","4:00 PM",500,"Friday, Thursday"
+d_004,h_0022,"6:00 PM","10:00 PM",1100,Wednesday
+d_058,h_0022,"2:00 PM","6:00 PM",700,"Thursday,Sunday"
+d_067,h_0022,"12:00 PM","4:00 PM",1200,Friday
+d_069,h_0022,"8:00 AM","12:00 PM",400,"Thursday,Sunday"
+d_075,h_0022,"12:00 PM","4:00 PM",700,Tuesday
+d_076,h_0022,"8:00 PM","12:00 AM",1000,"Friday, Thursday"
+d_085,h_0022,"6:00 PM","10:00 PM",1200,Friday
+d_093,h_0022,"6:00 PM","10:00 PM",1100,Tuesday
+d_111,h_0022,"12:00 PM","4:00 PM",400,"Sunday, Monday, Tuesday"
+d_112,h_0022,"6:00 PM","10:00 PM",900,Friday
+d_151,h_0022,"6:00 PM","10:00 PM",500,Saturday
+d_157,h_0022,"8:00 AM","12:00 PM",800,"Sunday, Monday, Tuesday"
+d_053,h_0022,"8:00 PM","12:00 AM",1000,"Thursday,Sunday"
+d_059,h_0022,"4:00 PM","8:00 PM",1000,"Sunday, Monday, Tuesday"
+d_042,h_0023,"6:00 PM","10:00 PM",500,Saturday
+d_065,h_0024,"4:00 PM","8:00 PM",900,"Thursday,Sunday"
+d_051,h_0025,"6:00 PM","10:00 PM",1200,"Sunday, Monday, Tuesday"
+d_132,h_0026,"4:00 PM","8:00 PM",300,Saturday
+d_158,h_0026,"2:00 PM","6:00 PM",1100,Friday
+d_125,h_0026,"8:00 PM","12:00 AM",900,Saturday
+d_083,h_0027,"6:00 PM","10:00 PM",1000,Tuesday
+d_081,h_0028,"8:00 PM","12:00 AM",1100,Friday
+d_107,h_0028,"2:00 PM","6:00 PM",600,"Thursday,Sunday"
+d_135,h_0029,"12:00 PM","4:00 PM",900,Friday
+d_095,h_0030,"6:00 PM","10:00 PM",1100,"Sunday, Monday, Tuesday"
+d_117,h_0030,"2:00 PM","6:00 PM",500,"Sunday, Monday, Tuesday"
+d_025,h_0031,"12:00 PM","4:00 PM",1400,"Friday, Thursday"
+d_007,h_0031,"6:00 PM","10:00 PM",900,Saturday
+d_082,h_0031,"2:00 PM","6:00 PM",1000,Friday
+d_100,h_0031,"8:00 AM","12:00 PM",1000,Saturday
+d_113,h_0031,"10:00 AM","2:00 PM",600,"Sunday, Monday, Tuesday"
+d_115,h_0031,"6:00 PM","10:00 PM",800,Tuesday
+d_117,h_0031,"4:00 PM","8:00 PM",900,Friday
+d_150,h_0031,"4:00 PM","8:00 PM",500,"Thursday,Sunday"
+d_149,h_0031,"12:00 PM","4:00 PM",1100,"Sunday, Monday, Tuesday"
+d_033,h_0032,"6:00 PM","10:00 PM",700,"Sunday, Monday, Tuesday"
+d_127,h_0033,"6:00 PM","10:00 PM",1000,"Friday, Thursday"
+d_071,h_0034,"10:00 AM","2:00 PM",900,"Friday, Thursday"
+d_062,h_0034,"12:00 PM","4:00 PM",800,Wednesday
+d_030,h_0036,"10:00 AM","2:00 PM",1100,Friday
+d_027,h_0037,"4:00 PM","8:00 PM",600,Friday
+d_053,h_0037,"8:00 AM","12:00 PM",1100,"Sunday, Monday, Tuesday"
+d_067,h_0037,"8:00 AM","12:00 PM",1400,Friday
+d_072,h_0037,"4:00 PM","8:00 PM",700,"Thursday,Sunday"
+d_159,h_0038,"4:00 PM","8:00 PM",700,Saturday
+d_094,h_0039,"4:00 PM","8:00 PM",800,Friday
+d_064,h_0040,"4:00 PM","8:00 PM",1000,"Thursday,Sunday"
+d_101,h_0041,"10:00 AM","2:00 PM",1300,Friday
+d_010,h_0042,"8:00 PM","12:00 AM",800,Wednesday
+d_085,h_0042,"2:00 PM","6:00 PM",1100,"Sunday, Monday, Tuesday"
+d_112,h_0042,"10:00 AM","2:00 PM",1100,Tuesday
+d_006,h_0042,"2:00 PM","6:00 PM",500,"Friday, Thursday"
+d_134,h_0043,"10:00 AM","2:00 PM",1000,Tuesday
+d_008,h_0043,"8:00 AM","12:00 PM",900,"Sunday, Monday, Tuesday"
+d_023,h_0044,"2:00 PM","6:00 PM",1200,Friday
+d_022,h_0045,"8:00 PM","12:00 AM",1200,Friday
+d_034,h_0041,"8:00 AM","12:00 PM",1300,Saturday
+d_049,h_0041,"6:00 PM","10:00 PM",1300,"Sunday, Monday, Tuesday"
+d_063,h_0041,"10:00 AM","2:00 PM",900,Saturday
+d_066,h_0041,"8:00 PM","12:00 AM",1100,Wednesday
+d_078,h_0041,"10:00 AM","2:00 PM",1400,"Sunday, Monday, Tuesday"
+d_087,h_0041,"4:00 PM","8:00 PM",700,Saturday
+d_088,h_0041,"4:00 PM","8:00 PM",1300,Friday
+d_116,h_0041,"12:00 PM","4:00 PM",1200,"Sunday, Monday, Tuesday"
+d_118,h_0041,"8:00 AM","12:00 PM",900,Saturday
+d_124,h_0041,"10:00 AM","2:00 PM",1200,Saturday
+d_039,h_0043,"4:00 PM","8:00 PM",700,Saturday
+d_095,h_0043,"12:00 PM","4:00 PM",1000,"Sunday, Monday, Tuesday"
+d_143,h_0043,"8:00 PM","12:00 AM",300,"Sunday, Monday, Tuesday"
+d_090,h_0041,"4:00 PM","8:00 PM",1200,Friday
+d_101,h_0046,"8:00 PM","12:00 AM",1000,Saturday
+d_116,h_0046,"6:00 PM","10:00 PM",500,Friday
+d_118,h_0046,"8:00 PM","12:00 AM",1400,"Thursday,Sunday"
+d_096,h_0048,"4:00 PM","8:00 PM",900,"Thursday,Sunday"
+d_076,h_0049,"2:00 PM","6:00 PM",400,Friday
+d_080,h_0049,"12:00 PM","4:00 PM",900,Friday
+d_063,h_0050,"10:00 AM","2:00 PM",1300,"Sunday, Monday, Tuesday"
+d_131,h_0052,"8:00 AM","12:00 PM",400,"Thursday,Sunday"
+d_031,h_0052,"12:00 PM","4:00 PM",600,"Thursday,Sunday"
+d_121,h_0052,"8:00 PM","12:00 AM",1400,Friday
+d_140,h_0052,"8:00 PM","12:00 AM",1000,Saturday
+d_015,h_0053,"4:00 PM","8:00 PM",900,"Thursday,Sunday"
+d_129,h_0054,"2:00 PM","6:00 PM",700,"Sunday, Monday, Tuesday"
+d_044,h_0055,"10:00 AM","2:00 PM",1400,"Sunday, Monday, Tuesday"
+d_059,h_0056,"2:00 PM","6:00 PM",500,"Thursday,Sunday"
+d_032,h_0057,"8:00 AM","12:00 PM",1100,"Thursday,Sunday"
+d_049,h_0058,"6:00 PM","10:00 PM",600,"Thursday,Sunday"
+d_044,h_0062,"4:00 PM","8:00 PM",900,"Thursday,Sunday"
+d_056,h_0059,"8:00 AM","12:00 PM",800,Saturday
+d_092,h_0060,"8:00 AM","12:00 PM",700,Saturday
+d_158,h_0061,"12:00 PM","4:00 PM",1400,"Thursday,Sunday"
+d_140,h_0061,"4:00 PM","8:00 PM",900,Saturday
+d_047,h_0062,"8:00 AM","12:00 PM",1300,Friday
+d_132,h_0063,"10:00 AM","2:00 PM",900,"Sunday, Monday, Tuesday"
+d_122,h_0064,"8:00 PM","12:00 AM",900,"Friday, Thursday"
+d_128,h_0065,"8:00 AM","12:00 PM",1000,"Sunday, Monday, Tuesday"
+d_114,h_0066,"6:00 PM","10:00 PM",1100,"Friday, Thursday"
+d_046,h_0067,"12:00 PM","4:00 PM",400,Friday
+d_050,h_0067,"4:00 PM","8:00 PM",1100,"Thursday,Sunday"
+d_137,h_0067,"6:00 PM","10:00 PM",400,Wednesday
+d_086,h_0068,"10:00 AM","2:00 PM",600,"Sunday, Monday, Tuesday"
+d_109,h_0068,"2:00 PM","6:00 PM",1200,Saturday
+d_028,h_0069,"4:00 PM","8:00 PM",800,Saturday
+d_098,h_0069,"2:00 PM","6:00 PM",1400,Friday
+d_141,h_0070,"10:00 AM","2:00 PM",1100,"Sunday, Monday, Tuesday"
+d_120,h_0069,"8:00 PM","12:00 AM",1000,"Thursday,Sunday"
+d_111,h_0069,"8:00 AM","12:00 PM",300,Friday
+d_038,h_0069,"2:00 PM","6:00 PM",1400,"Thursday,Sunday"
+d_041,h_0069,"4:00 PM","8:00 PM",500,Friday
+d_047,h_0069,"12:00 PM","4:00 PM",700,Saturday
+d_075,h_0069,"6:00 PM","10:00 PM",500,Saturday
+d_093,h_0069,"4:00 PM","8:00 PM",800,Friday
+d_094,h_0069,"8:00 AM","12:00 PM",1400,"Sunday, Monday, Tuesday"
+d_096,h_0069,"10:00 AM","2:00 PM",1300,Friday
+d_098,h_0069,"10:00 AM","2:00 PM",500,Tuesday
+d_119,h_0069,"6:00 PM","10:00 PM",600,Tuesday
+d_148,h_0069,"10:00 AM","2:00 PM",700,Tuesday
+d_154,h_0069,"2:00 PM","6:00 PM",900,Wednesday
+d_155,h_0069,"2:00 PM","6:00 PM",1200,Wednesday
+d_001,h_0069,"10:00 AM","2:00 PM",1200,"Sunday, Monday, Tuesday"
+d_011,h_0069,"8:00 AM","12:00 PM",1200,Friday
+d_060,h_0070,"8:00 AM","12:00 PM",1200,"Sunday, Monday, Tuesday"
+d_141,h_0070,"8:00 PM","12:00 AM",1200,"Friday, Thursday"
+d_070,h_0069,"6:00 PM","10:00 PM",1200,"Sunday, Monday, Tuesday"
+d_146,h_0071,"4:00 PM","8:00 PM",600,"Sunday, Monday, Tuesday"
+d_046,h_0008,"2:00 PM","6:00 PM",1200,Friday
+d_029,h_0072,"8:00 AM","12:00 PM",600,Tuesday
+d_062,h_0073,"12:00 PM","4:00 PM",1300,Wednesday
+d_057,h_0074,"8:00 PM","12:00 AM",600,Friday
+d_136,h_0075,"8:00 PM","12:00 AM",900,"Friday, Thursday"
+d_019,h_0076,"8:00 AM","12:00 PM",700,Friday
+d_013,h_0076,"12:00 PM","4:00 PM",700,"Sunday, Monday, Tuesday"
+d_020,h_0076,"8:00 PM","12:00 AM",500,Saturday
+d_064,h_0077,"12:00 PM","4:00 PM",800,Friday
+d_031,h_0077,"8:00 PM","12:00 AM",600,"Thursday,Sunday"
+d_142,h_0079,"10:00 AM","2:00 PM",900,"Sunday, Monday, Tuesday"
+d_003,h_0042,"4:00 PM","8:00 PM",400,Saturday
+d_034,h_0080,"2:00 PM","6:00 PM",500,"Sunday, Monday, Tuesday"
+d_088,h_0080,"10:00 AM","2:00 PM",1100,Saturday
+d_030,h_0080,"10:00 AM","2:00 PM",500,"Friday, Thursday"
+d_082,h_0080,"10:00 AM","2:00 PM",700,"Thursday,Sunday"
+d_107,h_0080,"10:00 AM","2:00 PM",1300,"Sunday, Monday, Tuesday"
+d_113,h_0080,"12:00 PM","4:00 PM",300,Saturday
+d_005,h_0080,"12:00 PM","4:00 PM",1100,"Sunday, Monday, Tuesday"
+d_040,h_0081,"2:00 PM","6:00 PM",400,Tuesday
+d_153,h_0081,"12:00 PM","4:00 PM",700,Wednesday
+d_105,h_0081,"8:00 PM","12:00 AM",800,Friday
+d_040,h_0081,"2:00 PM","6:00 PM",700,Tuesday
+d_045,h_0081,"8:00 PM","12:00 AM",900,Saturday
+d_077,h_0081,"8:00 AM","12:00 PM",300,Saturday
+d_089,h_0081,"10:00 AM","2:00 PM",700,Saturday
+d_105,h_0081,"2:00 PM","6:00 PM",400,"Friday, Thursday"
+d_153,h_0081,"10:00 AM","2:00 PM",600,"Friday, Thursday"
+d_156,h_0081,"12:00 PM","4:00 PM",1200,Saturday
+d_078,h_0080,"8:00 PM","12:00 AM",800,Friday
+d_136,h_0080,"2:00 PM","6:00 PM",400,Friday
+d_119,h_0077,"12:00 PM","4:00 PM",1300,Saturday
+d_009,h_0083,"6:00 PM","10:00 PM",400,Friday
+d_054,h_0084,"10:00 AM","2:00 PM",400,"Sunday, Monday, Tuesday"
+d_106,h_0084,"4:00 PM","8:00 PM",1000,Saturday
+d_144,h_0084,"8:00 AM","12:00 PM",1300,"Sunday, Monday, Tuesday"
+d_144,h_0084,"12:00 PM","4:00 PM",300,"Sunday, Monday, Tuesday"
+d_104,h_0084,"6:00 PM","10:00 PM",400,"Thursday,Sunday"
+d_104,h_0084,"8:00 AM","12:00 PM",1100,"Friday, Thursday"
+d_056,h_0085,"10:00 AM","2:00 PM",1000,Friday
+d_024,h_0086,"4:00 PM","8:00 PM",1000,Tuesday

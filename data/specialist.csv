@@ -1,0 +1,18 @@
+sp_id,specialist_name
+sp_001,Cardiology
+sp_002,Dental
+sp_003,Dermatology
+sp_004,Eye
+sp_005,ENT
+sp_006,"Gynaecology and Obstetrics"
+sp_007,Gastroenterology
+sp_008,Hepatologists
+sp_009,Haematology
+sp_010,Medicine
+sp_011,Nephrologists
+sp_012,Neuromedicine
+sp_013,Orthopaedics
+sp_014,Psychologist
+sp_015,Endocrinologists
+sp_016,Pediatric
+sp_017,Urology

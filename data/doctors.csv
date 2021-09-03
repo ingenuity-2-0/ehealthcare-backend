@@ -1,0 +1,160 @@
+d_id,doctor_name,qualification,designation,sp_id
+d_001,"Professor Dr. Abdullah-Al-Safi Majumder","MBBS, D. Card, MD(Card), FACC, FSGC, FRCP Research Fellow,","Professor of Cardiology",sp_001
+d_002,"Professor (Dr.) Mohammad Safiuddin","FACC(USA), FCCP(USA), FESC, FRCP(Glasgow,UK)","Professor of Interventional Cardiology,",sp_001
+d_003,"Professor (Dr.) Md. Fakhrul Islam","MBBS, MD (Cardiology), FESC (Europe), FACC (America)","Sinior Consultant, Heart Failure Dept. Labaid Cardiac Hospital, Dhaka.",sp_001
+d_004,"Dr. H. I. Lutfor Rahman Khan","MBBS, D-Card, MD (Card)","Professor & Head, Department of Cardiology",sp_001
+d_005,"Professor Dr. Md. Afjalur Rahman","MBBS, MD (Cardiology), PHD (Cardiology)","Professor & Head of Dept. Cardiology",sp_001
+d_006,"Professor Dr. Abduz Zaher","MBBS, FCPS ( Medicine ), FACC ( USA ) , FRCP","Consultant, Department of Interventional Cardiology",sp_001
+d_007,"Professor Dr. Abu Zafar","MBBS, MRCP ( UK ), FRCP ( Glasgow )","Professor, Ex-Head, Dept. of Cardiology, BSMMU",sp_001
+d_008,"Professor Hasina Banoo","MBBS, FCPS (Medicine)","Ex. Professor of Cardiology SSMCH (Mitford) & BSMMU",sp_001
+d_009,"Professor Dr. K.M.H.S. Sirajul Haque","MBBS, FCPS, FRCP, FACC","Cardiology /Heart Specialist",sp_001
+d_010,"Professor Dr. M. Jalaluddin","FCPS ( Medicine ), FRCP","Consultant Labaid Cardiac Hospital",sp_001
+d_011,"Professor Dr. M. Nazrul Islam","MBBS, FCPS, FRCP, FACC, FESC","Professor of Interventional Cardioloy",sp_001
+d_012,"Assoc. Prof. Dr. Aslam Almehdi","Ph.D. (Periodontal Plastic Surgery) Tokyo, Japan","Periodontal Plastic & Maxillofacial Surgeon",sp_002
+d_013,"Dr. Uttom Kumar Shet","BDS , MSD ( South Kore), PhD (South Korea),","Assistant Professor",sp_002
+d_014,"DR. SK. NAZRUL ISLAM","BDS(DU) PGT(BKK) FAES(USA) MCPS(BCPS)","Specialized Dental Surgeon",sp_002
+d_015,"Dr. Md. Abdullah Khan","BDS, PGT ( Japan )",Consultant,sp_002
+d_016,"Dr. M. A. Sikder","BDS, Ph.D ( Japan )",Consultant,sp_002
+d_017,"Professor Dr. Md. Shamsul Alam","BDS, DCD(USSR), FADI(USA)","Professor & Chairman",sp_002
+d_018,"Professor Dr. Khandaker Abdul Azim","BDS, Dip, OMS ( Australia )",Consultant,sp_002
+d_019,"Dr. Mohammed Shafi Ullah","MBBS, MS, BDS, MCPS, MDRA(USA)","Associate Professor & Head of Department",sp_002
+d_020,"Dr. Nurul Amin","BDS, PhD ( Japan )","Associate Professor & Head, Department of Oral & Maxillofacial Surgery",sp_002
+d_021,"Dr. Salahuddin ( Swapon )","B.D.S, FCPS","Assistant Professor & Head of Department ( CIDCH )",sp_002
+d_022,"PROF. COLONEL DR MD SHIRAJUL ISLAM KHAN","MBBS, DDV, MCPS, FCPS(Dermatology and Venereology), Grading Course in Dermatology (AFMI)","Professor and Head of the Department, Dermatology and Venereology, Combined Military Hospital (CMH), Dhaka",sp_003
+d_023,"Dr Lubna Khondker","MBBS, MPH, DDV (BSMMU), MCPS, FCPS (Dermatology and Venereology)","Associate Professor, Department of Dermatology and Venereology, Bangabandhu Sheikh Mujib Medical University (BSMMU), Dhaka",sp_003
+d_024,"Associate Prof. Dr. Hosne Ara Begum","MBBS, DDV, FCPS ( Skin & VD)","Associate Professor, and Head of the Department, Birdem",sp_003
+d_025,"Dr. A.S. Mofrehuddin Ahmed","MBBS (DHAKA), DDV","Consultant skin specialist",sp_003
+d_026,"Dr. A.S.M. Zakariya","MBBS, MPH, MD skin / dermatology","Assistant Professor",sp_003
+d_027,"Dr. A.T.M. Asaduzzaman","MBBS, MD","Assistant Professor.",sp_003
+d_028,"Dr. Abdul Quaium Chowdhury","M-Dermatology (India), Fellow (Vd & Aids) Lond Fellow (Skin Surgery) Germany",Consultant,sp_003
+d_029,"Dr. Abida Sultana","MBBS (Dhaka), DDV skin/dermatology","skin specialist",sp_003
+d_030,"Dr. Abul Farah","MBBS, DCM, DDV, MCPS (SKIN & VD) skin / dermatology","Registar-Sir Salimullah Medical College & Hospital, Dhaka",sp_003
+d_031,"Dr. Ahammad Ali","MBBS, DDV (DEU), DTM &H (THAI) skin / dermatology","Senior Consultant-Shahid Suhrawardi Hospital, Dhaka",sp_003
+d_032,"Dr. Abdul Ali",MBBS,Diabetes,sp_015
+d_033,"Professor Dr. Zafar A. Latif","MBBS, FCPS",Professor,sp_015
+d_034,"Dr. Indrajit Prasad","MBBS, FCPS, MD, MACE ( USA )","Assistant professor",sp_015
+d_035,"Dr. Ahsanul Haq Amin","MBBS, MD","Assistant Professor",sp_015
+d_036,"Dr. Md. Feroz Amin","MBBS, MD ( Endocrinology )","Assistant Professor",sp_015
+d_037,"Dr. Abdul Mannan Sarker","MBBS, DEM (DU), MD (Endocrinology)",Consultant,sp_015
+d_038,"Dr. ( Capt. Rtd. ) H.S Ferdous","MBBS, DEM (DU), FRMH (Australia), MACE (USA) Ph.D Fellow(DU),",Consultant,sp_015
+d_039,"Dr. A K M Shaeen Ahmed","MBBS, MCPS (Medicine), FCPS (Medicine)","Medicine & Diabetes",sp_015
+d_040,"Dr. Kazi Ali Hassan","MBBS, M.Phil (EM), MRCP (UK)","Consultant, Specialist of Endocrinologist",sp_015
+d_041,"Dr. Iqbal Ahmed","MBBS, CCD ( Birdem )",Specialist,sp_015
+d_042,"Dr. AKM Mamunur Rashid","MBBS, DCO(ICO,Ctg) , MPHO (UniSA)",NULL,sp_004
+d_043,"Professor Dr. A.H.M. Enayet Hussain","MBBS, FRCS ( Glasg. Uk ), FCPS ( BD ), ICO ( UK )",NULL,sp_004
+d_044,"Professor Dr. Deen Mohd. Noorul Huq","MBBS, FCPS",NULL,sp_004
+d_045,"Professor Dr. Shah Alam","MBBS, FCPS ( Ophthalmology )",NULL,sp_004
+d_046,"Professor Dr. Md. Saleh Uddin","MBBS, FCPS, MS, MPhD ( Australia ), FICS, FCPS",NULL,sp_004
+d_047,"Professor Dr. Jalal Ahmed","MBBS, FCPS, FICS",NULL,sp_004
+d_048,"Dr. A.K.M. Nazmus Saquib","MBBS, D.Ophth ( DU ), FEPS ( India ),",NULL,sp_004
+d_049,"Dr. G M Mostafa","MBBS, DO, MS ( Eye )",NULL,sp_004
+d_050,"Dr. Md. Fakhrul Islam","MBBS, MCPS ( Ophthalmology ), MS ( Ophthalmology )",NULL,sp_004
+d_051,"Dr. Mohibul karim","MBBS, Ph.D ( Japan ), FICA ( USA )",NULL,sp_004
+d_052,"Dr. Arun Dodhu Patole","MBBS, MS, DORL (Mumbai), Fellow A.I.N.OT (Italy)","Professor & Head of the Departnment of ENT",sp_005
+d_053,"Professor Dr. A.F. Mohiuddin Khan","MBBS, DLO, MS ( ENT )",Professor,sp_005
+d_054,"Professor Dr. Abdullah A. Harron","FRCS ( Gasgow ) , FCPS","Professor & Chairman",sp_005
+d_055,"Professor Dr. Abul Hasnat Joarder","MBBS, FCPS","Professor and Director",sp_005
+d_056,"Professor Dr. Mahmudul Hasan","MBBS, FCPS (ENT)","Associate Professor, Otolaryngology",sp_005
+d_057,"Dr. M A Rouf Sardar",NULL,"Assistant Professor",sp_005
+d_058,"Dr. A. F. Mohiuddin Khan","MBBS, DLO(DU), MS (ENT)","Assistant Professor",sp_005
+d_059,"Dr. A.B.M. Khorshed Alam","MBBS, FCPS","Assistant Professor",sp_005
+d_060,"Dr. A.K.M.A Sobhan","MBBS, FRSH(London), DLO, MS",Consultant,sp_005
+d_061,"Dr. Hossain Imam Al Hadi","MBBS, FCPS, FRCS (Glasgow), Fellowship Training (UK)","Assistant Professor",sp_005
+d_062,"Dr. Sharmin Akter Liza","MBBS, FCPS",Consultant,sp_006
+d_063,"Prof. Dr. Sangjukta Saha","MBBS, MS (Obs & Gynae).","Professor & Head, Dept. of Gynae, Obs & Laparoscopic Surgery, Shahid Monsur Ali Medical College and Hospital, Dhaka.",sp_006
+d_064,"Prof. Dr. Munira Ferdausi","MBBS, MPH(Dhaka), MS (Obs & Gynae)","Master Trainer On Cervical Cancer & Breast Cancer",sp_006
+d_065,"Dr. T A Chowdhury","MBBS, FRCS, FRCOG, FRCP, FCPS (Ban), FCPS (Pak)","Professor and Senior Consultant, Department of Obstetrics and Gynecology",sp_006
+d_066,"Dr. Laila Arjumand Banu","MBBS (Dhaka), DGO (DU), FCPS (Obs. & Gynae)","Professor of Gynaecology & Obstetrics and Chief Consultant",sp_006
+d_067,"Professor Dr. Amena Majid","MBBS, FCPS ( Gyne. ), MMED ( UK )","Ex. Professor of Gyne. & Obs.",sp_006
+d_068,"Dr. Ashrafun Nessa","MBBS, MRCOG (London)","Senior Consultant, Dept. of Obstetrics & Gynaecology",sp_006
+d_069,"Dr. Farhana Dewan","MBBS, FCPS (Gynae & Obs)","Senior Consultant, Dept. of Obstetrics & Gynaecology",sp_006
+d_070,"Dr. Hafizur Rahman","MBBS, FRCOG (London)","Senior Consultant, Obstetrics & Gynaecology",sp_006
+d_071,"Dr. Kohinoor Begum","MBBS, FCPS (Gynae & Obs)","Professor and Head of Gynaecology & Obstetrics",sp_006
+d_072,"Dr. Md. Abdur Rahim Miah","MBBS, MD ( Gastroenterology )","Associate Professor, Department of Gastroenterology",sp_007
+d_073,"Professor Dr. Anowar Kabir","MBBS, MRCP, FRCP, FCGE (UK)","Senior Consultant",sp_007
+d_074,"Professor Dr. A.S.M.A Raihan","MBBS, MD (Gastro), FRCP (edin)","Chairman, Department of Gastroenterology",sp_007
+d_075,"Professor Dr. Faruque Ahmed","MBBS, FCPS ( Med. ), MD ( Gastro. )","Professor & Head, Dept. of Gastroenterology",sp_007
+d_076,"Professor Dr. M A Masud","FCPS, MD ( Gastro ), MACG ( USA )","Professor, Department of Gastroenterology",sp_007
+d_077,"Professor Dr. Md. Samsul Arfin","MBBS, FCPS, (Medicine)",Consultant,sp_007
+d_078,"Professor Dr. Swapan Chandra Dhar","MBBS. FCPS. MD (Gas), MACG (USA)","Professor & Head, Department of Gastroenterology",sp_007
+d_079,"Dr. Hasan Masud","MBBS, MD","Associate Professor",sp_007
+d_080,"Dr. Md. Mohsin Kabir","MBBS, MD ( Gastro )","Assistant Professor, Department of GHPD",sp_007
+d_081,"Dr. Md. Anwarul Karim","FCPS ( Ped. ), MD ( Ped. )","Associate Professor",sp_009
+d_082,"Professor Dr. Alamgir Kabir","MBBS, FCPS ( Hematology )","Professor & Head, Department of Hematology",sp_009
+d_083,"Professor Dr. A. B. M. Yunus","MBBS (India), MPhil Path (Hons), FCPS (Hematology)",Professor,sp_009
+d_084,"Professor Dr. Md. Moniruzzaman","MBBS, GC (Pathology),","MCPS (Clinical Pathology), FCPS (Haematology)",sp_009
+d_085,"Professor Dr. M A Khan","MBBS, FCPS ( Hematology ), ASH Member","Professor and Head, Department of Hematology",sp_009
+d_086,"Professor Dr. Md. Jalilur Rahman","MBBS, M.Phil, FCPS, FRCP (Edin), FRCP (Glasgow)","Professor & Chairman",sp_009
+d_087,"Professor Dr. Manzur morshed","MBBS, FCPS, MRCP(UK)",Professor,sp_009
+d_088,"Professor Dr. Manjur Morshed","MBBS, FCPS, MRCP ( UK )",Professor,sp_009
+d_089,"Dr. Mohammed A. Hashem","MBBS, MD (Interna. Med. USA), Fellow in Nephrology (USA)",Consultant,sp_011
+d_090,"Professor Dr. Muhammad Rafiqul Alam","MBBS, MD ( Nephrology ), Fcps ( Medicine )","Professor & Chairman, department of Nephrology",sp_011
+d_091,"Professor Dr. Md. Abul Mansur","MBBS, MD, Dip. in Nephro","Professor, Department of Hemodialysis",sp_011
+d_092,"Professor Dr. Md. Jahangir Kobir","FCPS (Medicine) FCW (Kidney)UK","Director & Professor",sp_011
+d_093,"Professor Dr. M. Muhibur Rahman","MBBS (DMC), FCPS (Medicine), MRCP (UK), Ph.D Nephrology (London)","Professor, Department of Nephrology",sp_011
+d_094,"Prof. Dr. Harun-Ur-Rashid","MBBS, P.hD, FCPS, FRCP","Former Professor & Chairman",sp_011
+d_095,"Dr. A.K.M. Shamsul kabir","MBBS (DMCH), FCPS (Medicine), MD (Hepatology)","Assistant Professor",sp_008
+d_096,"Professor Dr. A H M Rowshon","MBBS, FCPS (Med.), MD(Gastro),","Commonwealth Fellow-gastro (UK)",sp_008
+d_097,"Professor Dr. A. K. M. Khorshed Alam","MBBS, FCPS; MHPE","Professor, Department of Hepatology",sp_008
+d_098,"Professor Dr. M. T. Rahman","MBBS, FCPS, Trained in France & Japan","Former Professor, Gastrointestinal Liver & Pancereatic Diseases",sp_008
+d_099,"Professor Dr. Anowar Kabir","MBBS, MRCP, FRCP, FCGE (UK)","Senior Consultant",sp_008
+d_100,"Dr. Dewan Saifuddin Ahmed","MBBS, FCPS ( Medicine ), MD ( Gastro )","Associate Professor",sp_008
+d_101,"Dr. Mamun-Al-Mahtab (Shwapnil)","MBBS, MSC ( Gastroenterology, London )","Assistant Professor, Department of Liver",sp_008
+d_102,"Dr. Lutful L. Chowdhury","MBBS, MRCP, FRCP, FCGE (UK)","Senior Consultant",sp_008
+d_103,"Dr. Hafeza Aftab","MBBS, MD (Gastroentrology)",Consultant,sp_008
+d_104,"Dr. Mohammad Jahangir Talukder","MBBS(Ctg), MRCP(UK), MRCP (Edin)",Consultant,sp_010
+d_105,"Dr. Abu Reza Mohammad Nooruzzaman",NULL,Consultant,sp_010
+d_106,"Dr. Afsana Begum","MBBS, FCPS",Specialist,sp_010
+d_107,"Dr. Anup Kumar Saha","MBBS, FCPS ( Medicine ), MD ( Internal Medicine ), FACP ( America )","Associate Professor",sp_010
+d_108,"Dr. Abdullah Al Mamun","MBBS, FCPS (Medicine), MACP ( USA ), FACP",Consultant,sp_010
+d_109,"Dr. Md. Abul Kalam Azad","MBBS, FCPS","Associate Professor",sp_010
+d_110,"Professor Dr. A.B.M Abullah","MRCP(UK), FRCP",Professor,sp_010
+d_111,"Professor Dr. H A M Nazmul Ahsan","MBBS, FCPS, FRCP (Glasgow) FRCP (Edin), FACP (USA)","Professor of Medicine",sp_010
+d_112,"Professor Dr. Mansur Habib","MBBS, FCPS (Medicine) , MD (Neurology) MRCP, FRCP","Professor , Department of Neurology",sp_012
+d_113,"Professor Dr. Md. Abdul Hai","MBBS, FCPS (Medicine),MD (Neuro),PhD (India), FRCP (Edin),Fellow (Interventional Neurology)",Professor,sp_012
+d_114,"Professor Dr. M. A. Mannan","MBBS, FRCP","Professor, Rtd. & Head of the Department of Neurology",sp_012
+d_115,"Professor Dr. Md. Amirul Haque","MBBS, FCPS, FFRCP ( Glasgow ), FACP ( USA ), DCN ( London )","Professor & Head, Department of Neuromedicine",sp_012
+d_116,"Professor Dr. Md. Ashraf Ali","Senior Consultant, Department of Neurology","MBBS, FCPS ( Medicine ), MD ( Neurology ), FRCSP ( Edin )",sp_012
+d_117,"Professor Dr. (Major Retd.) Md. Mahbubur Rahman","MBBS, FCPS (Medicine), MD (Neurology)","Professor & Head, Department of Neuromedicine",sp_012
+d_118,"Professor Dr. Sirajul Haque","MBBS, FCPS (Medicine), FACP (USA), FRCP (Edin)","Chief Consultant",sp_012
+d_119,"Professor Dr. Syed Wahidur Rahman","MBBS, FCPS (Medicine)","Professor & Head, Neuromedicine Department",sp_012
+d_120,"Professor Dr. Anisul Haque","MBBS, Ph.D. FCPS, FRCP (Edin)","Professor, Head of the Deptartment of Neuro Medicine BSMMU",sp_012
+d_121,"Professor Dr. A.K.M. Anwar Ullah","MBBS, FCPS, FRCP(Adin)",Professor,sp_012
+d_122,"Prof. Dr. Md. Iqbal Qavi","MBBS, D.Ortho, MS (Ortho)","Professor of Orthopedics (Rtd)",sp_013
+d_123,"Dr. Amit Kapoor","MBBS, MS (Ortho.), DNB (Ortho.),",Consultant,sp_013
+d_124,"Dr. Abu Jafar Chowdhury","MBBS, MS ( Ortho )","Assistant Professor",sp_013
+d_125,"Professor Dr. Kh. Abdul Awal","MBBS, MS, FICS","Professor & Director",sp_013
+d_126,"Professor Dr. M. Hafizur Rahman","MBBS, MS","Professor & Head, Department Of Orthopaedic",sp_013
+d_127,"Professor M. K. I. Qayyum Chowdhury","MBBS, MS (Ortho), F.I.C.S, F.A.C.S (USA)","Head, Orthopedic Department",sp_013
+d_128,"Prof. Dr. Md. Siraj-Ul-Islam","MBBS, MS (Ortho)",Professor,sp_013
+d_129,"Professor Dr. Qazi Shahidul Alam","MBBS, D. Orth, MS ( Orth ), FICS ( USA )",Professor,sp_013
+d_130,"Brig Gen Professor Dr. A K M Masud","MBBS, MS","Professor & Head, Department of Orthopaedics",sp_013
+d_131,"Professor Dr. A.K.M. Akter Murshed","MBBS, MS, FICS",Professor,sp_013
+d_132,"Dr. Shyamal Debnath","MBBS,.MS(Ortho)","Associate Professor",sp_013
+d_133,"Prof. Dr Anwara Begum","MBBS, FCPS, MRCPsych (London)","Professor of Psychiatry and Chief Consultant,",sp_014
+d_134,"Professor Dr. M S I Mullick","MBBS, Phd, FCPS, MRC Psyc ( London ) , DCAP","Professor & Chairman, Department of Pshychiatric",sp_014
+d_135,"Professor Dr. Md. Enayet Karim","MBBS, FCPS (Psychiatry)",NULL,sp_014
+d_136,"Professor Dr. Dewan Abdur Rahim","PhD, DPM, MCPS (Psych), MBBS Fellow WHO (India), Fellow JICA (Japan)","Ex. Head of Dept. Psychiatry",sp_014
+d_137,"Professor Dr. Md. Ahsanul Habib","MBBS, FCPS ( Psyhch )","Professor, Ex - Director, Mental Hospital, Pabna",sp_014
+d_138,"Prof. Brig. Gen. Dr. Md. Sajjadur Rahman","MBBS, FCPS ( Psychiatry )","Professor & Head, Department of Psychiatry",sp_014
+d_139,"Prof. Brig. Gen. Dr. Md. Sajjadur Rahman","MBBS, FCPS ( Psychiatry )","Professor & Head, Department of Psychiatry",sp_014
+d_140,"Professor Dr. Md. Golam Rabbani","MBBS, FCPS",Professor,sp_014
+d_141,"Dr. Md. Al - Amin Mridha","MBBS, MCPS, FCPS, MD(Child)",Consultant,sp_016
+d_142,"Dr. Md. Aminul Ehsan","MBBS, DCH",Consultant,sp_016
+d_143,"Professor Dr. Afiqul Islam","MBBS, FCPS, MD",Professor,sp_016
+d_144,"Professor Dr. Selim Shakur","MBBS, FRCPCH ( UK ) , FRCP ( London ) , FRCP ( Edin ) ,","Consultant & Head of Department of Pediatrics",sp_016
+d_145,"Professor Golam Maeen Uddin","MBBS, FCPS (Child Disease), FRCP (Edin) Fellow - Child Kidney Disease, Australia","Professor, Department of Child Health,",sp_016
+d_146,"Professor Dr. Karim Khan","MBBS, S.Paed ( Vienna), MCPS ( Child ),DCH ( Glasgow), DTM & H ( London ), MPH ( DU )","Professor of Paediatrics, Child Health",sp_016
+d_147,"Professor Dr. Golam Mainuddin","MBBS, FCPS (Child), FRCP (Edin)","Professor, Department of Pediatric",sp_016
+d_148,"Professor Dr. M. A. Jaigirdar","MBBS, DCH, MRCP (UK)",Professor,sp_016
+d_149,"Professor Dr. M.A. Kashem Sarkar","MBBS, DCH, MRCP, FRCP",Professor,sp_016
+d_150,"Professor Dr. Sarwar Ferdous","MBBS, MRCP, MRCP, DCH","Professor & Head, Department of Pediatric",sp_016
+d_151,"Dr. Md. Shafiqul Alam Chowdhury","MBBS, MS (Urology)","Assistant Professor",sp_017
+d_152,"Professor Dr. M.A. Salam","MBBS, FCPS, FICS","Professor & Chairman, Departmnet of Urology",sp_017
+d_153,"Dr. ATM Samdani","MBBS, MD ( Radiology and Imaging from BIRDEM )","Associate Consultant",sp_017
+d_154,"Professor Dr. AKM Anwarul Islam","MBBS, FCPS, FRCS, FICS Clinical Fellow in Urology (WHO)","Professor, Department of Urology",sp_017
+d_155,"Professor Dr. Mirza M H Faisal","MBBS, FCPS, FRCS (Ed), FICS","Senior Consultant & Head, Department of Urology",sp_017
+d_156,"Professor Dr. Ko Ninan Chac","MBBS, MS, MCh(Urology), FRCS (Urology)",Consultant,sp_017
+d_157,"Professor Dr. S M Mahbub Alam","MBBS, FCPS ( Surgery ), MS ( Urology )","Professor & Head, Department of Urology",sp_017
+d_158,"Professor Dr. Zamanul Islam Bhuiyan","FCPS, FICS, MS","Professor & Head of the department",sp_017
+d_159,"Dr. A.T.M. Aman Ullah","MBBS, MS ( Urology )","Associate Professor",sp_017
