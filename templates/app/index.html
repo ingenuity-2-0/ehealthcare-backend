@@ -1,0 +1,561 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="{% static './assets/images/favicon.png' %}" type="image/gif" sizes="64x64">
+    <link rel="shortcut icon" href="{% static './assets/images/favicon.png' %}" type="image/gif" sizes="64x64">
+    <link rel="apple-touch-icon" href="{% static './assets/images/favicon.png' %}" type="image/gif">
+
+    <title>Home | E-Health Care</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://unpkg.com/@yaireo/tagify"></script>
+    <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
+    <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="{% static './assets/css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- Navbar-Start -->
+    <div class="navbar-shadow">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="{% static './assets/images/logo.svg' %}" alt="" width="75%" height="auto">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="heart-checkup.html">Heart Checkup</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="covid.html"> <span
+                                        class="text-danger">Covid-19</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#aboutUs">About Us</a>
+                            </li>
+                        </ul>
+                        <!-- Login-Button -->
+                        <a href="./signup.html"><button class="btn px-4">Login</button></a>
+                        <a href="./signup.html"><button class="btn signup-btn px-4">Sign Up</button></a>
+
+                        <!-- User-Profile -->
+{#                        <div class="d-flex align-items-center btn-group">#}
+{#                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"#}
+{#                                aria-expanded="false">#}
+{#                                <img class="user-img" src="{% static './assets/images/user.png' %}" alt="user">#}
+{#                                <span class="user-first-name">Shahriar</span>#}
+{#                            </button>#}
+{#                            <ul class="dropdown-menu">#}
+{#                                <li><a class="dropdown-item" href="PublicProfile.html">profile</a></li>#}
+{#                                <li>#}
+{#                                    <hr class="dropdown-divider">#}
+{#                                </li>#}
+{#                                <li>#}
+{#                                    <a type="button" class="btn dropdown-item" data-bs-toggle="modal"#}
+{#                                        data-bs-target="#staticBackdrop">#}
+{#                                        Log Out#}
+{#                                    </a>#}
+{#                                </li>#}
+{#                            </ul>#}
+
+                            <!-- Log out Popup -->
+{#                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"#}
+{#                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"#}
+{#                                aria-hidden="true">#}
+{#                                <div class="modal-dialog">#}
+{#                                    <div class="modal-content modal-wrapper border-0">#}
+{#                                        <div class="modal-top">#}
+{#                                            <i class="danger-icon fas fa-exclamation-triangle"></i>#}
+{#                                            <div>#}
+{#                                                <h5 class="modal-heading">Log out from this session</h5>#}
+{#                                                <p class="modal-description">Are you sure you want to log out? All of#}
+{#                                                    your data#}
+{#                                                    will be temporary#}
+{#                                                    removed. You have to sign in again.</p>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                        <div class="modal-bottom">#}
+{#                                            <button type="button" class="btn btn-outline-primary mx-3"#}
+{#                                                data-bs-dismiss="modal">Cancel</button>#}
+{#                                            <a href="http://">#}
+{#                                                <button type="button" class="btn btn-custom-danger">#}
+{#                                                    Log out#}
+{#                                                </button>#}
+{#                                            </a>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+
+{#                        </div>#}
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar-End -->
+
+    <!-- Hero-Section-Start -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 text-light mt-4">
+                    <h1>E-Health Care</h1>
+                    <p class="hero-description">E-Health Care is a dream that turned into a tech based startup, a
+                        business with a great
+                        purpose to create positive impacts in peoples' lives. It is the first online doctor appointment
+                        service platform in Bangladesh, providing real time doctor information and appointments through
+                        a fully integrated system. E-Health Care is missioned to bring convenience in the healthcare
+                        service
+                        delivery for the general people in Bangladesh.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <div class="feture-bar mt-0 mt-md-5 mt-lg-4 mt-xxl-5">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-custom-white active" id="pills-search-doctor-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-search-doctor" type="button" role="tab"
+                                    aria-controls="pills-search-doctor" aria-selected="true">Search Doctor</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-custom-white" id="pills-search-hospital-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-search-hospital" type="button"
+                                    role="tab" aria-controls="pills-search-hospital" aria-selected="false">Search
+                                    Hospital</button>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-custom-white" href="./ListOfDoctor.html">Doctor List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-custom-white" href="./ListOfHospital.html">Hospital list</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero-Section-End -->
+
+    <!-- Main-Section-Start -->
+    <section class="main-content bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 xs-custom-mt">
+                    <div class="tab-content mt-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-search-doctor" role="tabpanel"
+                            aria-labelledby="pills-search-doctor-tab">
+                            <!-- content-1-start -->
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-appointment-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-appointment" type="button" role="tab"
+                                        aria-controls="pills-appointment" aria-selected="true">Based on
+                                        city / speciality</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-disease-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-disease" type="button" role="tab"
+                                        aria-controls="pills-disease" aria-selected="false">Based on
+                                        Symptoms</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-appointment" role="tabpanel"
+                                    aria-labelledby="pills-appointment-tab">
+                                    <!-- doctor-appointment-start -->
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <h3 class="mb-5">Search for doctor</h3>
+
+                                            <form autocomplete="off" action="{% url 'doctor:name_search' %}" method="post">
+                                                {% csrf_token %}
+                                                <div class="mb-3">
+                                                    <div class="autocomplete w-100">
+                                                        <label for="setectCity" class="form-label">Select
+                                                            City</label>
+                                                        <input id="cityField" type="text" class="form-control"
+                                                            placeholder="eg. dhaka" name="name_cityField">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <div class="autocomplete w-100">
+                                                        <label for="setectCity" class="form-label">Search By</label>
+                                                        <input id="doctorSpeField" type="text" class="form-control"
+                                                            placeholder="doctor name, speciality, etc", name="doctor_or_specialist">
+                                                    </div>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <img class="img-fluid" width="90%" alt="" src="{% static './assets/images/doctors.svg' %}">
+                                        </div>
+                                    </div>
+                                    <!-- doctor-appointment-end -->
+                                </div>
+                                <div class="tab-pane fade" id="pills-disease" role="tabpanel"
+                                    aria-labelledby="pills-disease-tab">
+                                    <!-- deases-search-start -->
+                                    <div class="row mt-5">
+                                        <div class="col-3 d-none d-lg-block d-xl-block">
+                                            <img class="img-fluid" src="{% static './assets/images/medicine-1.svg' %}" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-6 border border-5 border-light">
+                                            <h3 class="text-center my-3">Find Doctor Based on Symptoms</h3>
+                                            <form action="{% url 'doctor:symptoms_search' %}" method="post">
+                                                {% csrf_token %}
+                                                <textarea name='tags2' placeholder='write and select disease name'
+                                                    class="border border-primary">
+                                                </textarea>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="submit" class="btn btn-primary mt-2">Submit
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-3 d-none d-lg-block d-xl-block">
+                                            <img class="img-fluid" src="{% static './assets/images/medicine-2.svg' %}" alt="">
+                                        </div>
+
+                                    </div>
+                                    <!-- deases-search-end -->
+                                </div>
+                            </div>
+                            <!-- content-1-end -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-search-hospital" role="tabpanel"
+                            aria-labelledby="pills-search-hospital-tab">
+                            <!-- content-2-start -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-12 col-lg-6">
+                                    <h3 class="mb-5">Search Hospital</h3>
+                                    <form autocomplete="off" action="/">
+
+                                        <div class="mb-3">
+                                            <div class="autocomplete w-100">
+                                                <label for="setectCity" class="form-label">Select
+                                                    City</label>
+                                                <input id="cityField2" type="text" class="form-control"
+                                                    placeholder="eg. dhaka">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="autocomplete w-100">
+                                                <label for="hospitalField" class="form-label">Select Hospital</label>
+                                                <input id="hospitalField" type="text" class="form-control"
+                                                    placeholder="eg. ibn sina">
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <img class="img-fluid" width="85%" alt=""
+                                        src="{% static './assets/images//Laboratory-amico.svg' %}">
+                                </div>
+                            </div>
+                            <!-- content-2-end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main-Section-End -->
+
+    <!-- Covid-Section-Start -->
+    <section>
+        <div class="container">
+            <h2 class="text-center">COVID-19</h2>
+            <p class="text-center">Coronavirus (COVID-19) Dashboard</p>
+            <div>
+                <p>Last 24 hours</p>
+{#                <p>Source: <a class="text-decoration-none" href="https://corona.gov.bd/"#}
+{#                        target="_blank">https://corona.gov.bd/</a></p>#}
+            </div>
+            <div class="row">
+                <!-- service-1-start -->
+                <div class="col-6 col-md-4 col-lg-3 mt-2">
+                    <div class="service-wrapper">
+                        <div class="inner-box box-blue">
+                            <span id="confirmed" class="covid-num">{{ context.Lab_Test}}</span>
+                        </div>
+                        <h6 class="header">Lab Test</h6>
+                    </div>
+                </div>
+                <!-- service-1-end -->
+                <div class="col-6 col-md-4 col-lg-3 mt-2">
+                    <div class="service-wrapper">
+                        <div class="inner-box box-pink">
+                            <span id="deaths" class="covid-num">{{ context.Confirmed }}</span>
+                        </div>
+                        <h6 class="header">Confirmed</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mt-2">
+                    <div class="service-wrapper">
+                        <div class="inner-box box-green">
+                            <span id="recovered" class="covid-num">{{ context.Recovered }}</span>
+                        </div>
+                        <h6 class="header">Recovered</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mt-2">
+                    <div class="service-wrapper">
+                        <div class="inner-box box-purple">
+                            <span id="newRecovered" class="covid-num">{{ context.Death }}</span>
+                        </div>
+                        <h6 class="header">Death</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Covid-Section-End -->
+
+
+
+    <!-- About us section start -->
+    <section id="aboutUs">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">Meet Our Developers</p>
+            <div class="aboutUs ">
+
+                <div class="d-flex justify-content-between">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Shahriar Shafin</h2>
+                                <p>Student</p>
+                                <p>University of Asia Pacific</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="footer-social-links">
+                                    <a href="#" title="Facebook" target="_blank"><i
+                                            class="text-white fab fa-facebook"></i></a>
+                                    <a href="#" title="Instagram" target="_blank"><i
+                                            class="text-white fab fa-instagram"></i></a>
+                                    <a href="#" title="Gmail" target="_blank"><i
+                                            class="text-white fas fa-envelope"></i></a>
+                                    <a href="#" title="LinkedIn" target="_blank"><i
+                                            class="text-white fab fa-linkedin"></i></a>
+                                    <a href="#" title="github" target="_blank"><i
+                                            class="text-white fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Sabbir Hosen</h2>
+                                <p>Student</p>
+                                <p>University of Asia Pacific</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="footer-social-links">
+                                    <a href="#" title="Facebook" target="_blank"><i
+                                            class="text-white fab fa-facebook"></i></a>
+                                    <a href="#" title="Instagram" target="_blank"><i
+                                            class="text-white fab fa-instagram"></i></a>
+                                    <a href="#" title="Gmail" target="_blank"><i
+                                            class="text-white fas fa-envelope"></i></a>
+                                    <a href="#" title="LinkedIn" target="_blank"><i
+                                            class="text-white fab fa-linkedin"></i></a>
+                                    <a href="#" title="github" target="_blank"><i
+                                            class="text-white fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Ashraful haque</h2>
+                                <p>Student</p>
+                                <p>University of Asia Pacific</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="footer-social-links">
+                                    <a href="#" title="Facebook" target="_blank"><i
+                                            class="text-white fab fa-facebook"></i></a>
+                                    <a href="#" title="Instagram" target="_blank"><i
+                                            class="text-white fab fa-instagram"></i></a>
+                                    <a href="#" title="Gmail" target="_blank"><i
+                                            class="text-white fas fa-envelope"></i></a>
+                                    <a href="#" title="LinkedIn" target="_blank"><i
+                                            class="text-white fab fa-linkedin"></i></a>
+                                    <a href="#" title="github" target="_blank"><i
+                                            class="text-white fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="{% static './assets/images/logo-white.svg' %}" alt=""></a>
+                        </div>
+                        <p>E-Health Care is a dream that turned into a tech based startup, a business with a great
+                            purpose to create positive impacts in peoples' lives.</p>
+
+                        <!-- Add Social Icon -->
+                        <div>
+                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-facebook"
+                                        style="color:#30629d;"></i></span></a>
+                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-twitter"
+                                        style="color:#00A7E6;"></i></span></a>
+                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-linkedin"
+                                        style="color:#0073B1;"></i></span></a>
+                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-instagram"
+                                        style="color:#D32C86;"></i></span></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 offset-lg-1 col-md-3 col-6">
+                    <div class="footer-widget">
+                        <h6>Link Group</h6>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Doctor</a></li>
+                            <li><a href="#">Disease</a></li>
+                            <li><a href="#">Hospitals</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="footer-widget">
+                        <h6>Link Group 2</h6>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Doctor</a></li>
+                            <li><a href="#">Disease</a></li>
+                            <li><a href="#">Hospitals</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 col">
+                    <div class="footer-widget">
+                        <h6>Links Group 3</h6>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Doctor</a></li>
+                            <li><a href="#">Disease</a></li>
+                            <li><a href="#">Hospitals</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-copyright-text">
+                        <p>&copy; Copyright <script>
+                                document.write(new Date().getFullYear());
+                            </script> | <a href="index.html"> E-Health Care </a> | All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Main JS -->
+{#    <script type="text/javascript" src="text.json"></script>#}
+    <script src="{% static './assets/js/script.js' %}"></script>
+    <script>
+        getdiseaseName();
+
+        async function getdiseaseName() {
+            const jsondatas = await fetch("{% static './assets/dataAPI.json' %}");
+            const getData = await jsondatas.json();
+
+            const diseases = getData.diseases;
+            const cities = getData.cities;
+            const doctorSpe = getData.doctorSpe;
+            const hospitals = getData.hospitals;
+
+            autocomplete(document.getElementById("cityField"), cities);
+            autocomplete(document.getElementById("cityField2"), cities);
+            autocomplete(document.getElementById("doctorSpeField"), doctorSpe);
+            autocomplete(document.getElementById("hospitalField"), hospitals);
+
+            let input = document.querySelector("textarea[name=tags2]"),
+                tagify = new Tagify(input, {
+                    enforceWhitelist: true,
+                    delimiters: null,
+                    whitelist: diseases,
+                    callbacks: {
+                        add: console.log, // callback when adding a tag
+                        remove: console.log, // callback when removing a tag
+                    },
+                });
+        }
+    </script>
+</body>
+
+</html>
