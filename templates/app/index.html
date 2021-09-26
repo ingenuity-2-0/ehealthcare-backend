@@ -45,7 +45,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="{% url 'app:home' %}">Home</a>
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="heart-checkup.html">Heart Checkup</a>
@@ -66,7 +66,7 @@
 {#                        <div class="d-flex align-items-center btn-group">#}
 {#                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"#}
 {#                                aria-expanded="false">#}
-{#                                <img class="user-img" src="{% static './assets/images/user.png' %}" alt="user">#}
+{#                                <img class="user-img" src="./assets/images/user.png" alt="user">#}
 {#                                <span class="user-first-name">Shahriar</span>#}
 {#                            </button>#}
 {#                            <ul class="dropdown-menu">#}
@@ -81,8 +81,8 @@
 {#                                    </a>#}
 {#                                </li>#}
 {#                            </ul>#}
-
-                            <!-- Log out Popup -->
+{##}
+{#                            <!-- Log out Popup -->#}
 {#                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"#}
 {#                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"#}
 {#                                aria-hidden="true">#}
@@ -110,7 +110,7 @@
 {#                                    </div>#}
 {#                                </div>#}
 {#                            </div>#}
-
+{##}
 {#                        </div>#}
                     </div>
                 </div>
@@ -226,11 +226,11 @@
                                     <!-- deases-search-start -->
                                     <div class="row mt-5">
                                         <div class="col-3 d-none d-lg-block d-xl-block">
-                                            <img class="img-fluid" src="{% static './assets/images/medicine-1.svg' %}" alt="">
+                                            <img class="img-fluid" src="./assets/images/medicine-1.svg" alt="">
                                         </div>
                                         <div class="col-12 col-md-12 col-lg-6 border border-5 border-light">
                                             <h3 class="text-center my-3">Find Doctor Based on Symptoms</h3>
-                                            <form action="{% url 'doctor:symptoms_search' %}" method="post">
+                                                <form action="{% url 'doctor:symptoms_search' %}" method="post">
                                                 {% csrf_token %}
                                                 <textarea name='tags2' placeholder='write and select disease name'
                                                     class="border border-primary">
@@ -242,7 +242,7 @@
                                             </form>
                                         </div>
                                         <div class="col-3 d-none d-lg-block d-xl-block">
-                                            <img class="img-fluid" src="{% static './assets/images/medicine-2.svg' %}" alt="">
+                                            <img class="img-fluid" src="./assets/images/medicine-2.svg" alt="">
                                         </div>
 
                                     </div>
@@ -429,17 +429,6 @@
 
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
     <!-- footer start -->
     <footer class="footer">
         <div class="container">
@@ -470,36 +459,36 @@
 
                 <div class="col-lg-3 offset-lg-1 col-md-3 col-6">
                     <div class="footer-widget">
-                        <h6>Link Group</h6>
+                        <h6>Information</h6>
                         <ul>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Doctor</a></li>
-                            <li><a href="#">Disease</a></li>
-                            <li><a href="#">Hospitals</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">E-Sheba</a></li>
+                            <li><a href="#">Doctor Protal</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-3 col-6">
                     <div class="footer-widget">
-                        <h6>Link Group 2</h6>
+                        <h6>Quick Link</h6>
                         <ul>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Doctor</a></li>
-                            <li><a href="#">Disease</a></li>
-                            <li><a href="#">Hospitals</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Notice</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-md-12 col">
                     <div class="footer-widget">
-                        <h6>Links Group 3</h6>
+                        <h6>Important</h6>
                         <ul>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Doctor</a></li>
-                            <li><a href="#">Disease</a></li>
-                            <li><a href="#">Hospitals</a></li>
+                            <li><a href="#">e-Sastho Premium</a></li>
+                            <li><a href="#">e-Sastho Plus</a></li>
+                            <li><a href="#">Senior Citizen Care</a></li>
+                            <li><a href="#">Personal & Family Care</a></li>
                         </ul>
                     </div>
                 </div>
@@ -527,7 +516,7 @@
     <!-- Main JS -->
 {#    <script type="text/javascript" src="text.json"></script>#}
     <script src="{% static './assets/js/script.js' %}"></script>
-    <script>
+<script>
         getdiseaseName();
 
         async function getdiseaseName() {

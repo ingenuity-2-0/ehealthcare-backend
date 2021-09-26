@@ -40,17 +40,25 @@ def data_for_auto_suggestion():
 
 
 def covid19_last24():
-    url = 'http://103.247.238.92/webportal/pages/covid19.php'
-    page = requests.get(url)
-    soup = BeautifulSoup(page.content, "html.parser")
-    latest = soup.find_all(class_='callout')
     latest24 = {}
-    for x in latest:
-        number = x.find(class_="info-box-number")
-        number1 = x.find(class_="last_24_hour_body")
-        temp1 = str(number1.text.strip())
-        temp1 = temp1.replace(' ', '_')
-        temp2 = str(number.text.strip())
-        latest24.update({temp1: temp2})
-    # print(latest24)
+    try:
+        url = 'http://103.247.238.92/webportal/pages/covid19.php'
+        page = requests.get(url)
+        soup = BeautifulSoup(page.content, "html.parser")
+        latest = soup.find_all(class_='callout')
+        for x in latest:
+            number = x.find(class_="info-box-number")
+            number1 = x.find(class_="last_24_hour_body")
+            temp1 = str(number1.text.strip())
+            temp1 = temp1.replace(' ', '_')
+            temp2 = str(number.text.strip())
+            latest24.update({temp1: temp2})
+        # print(latest24)
+    except:
+        latest24 = {
+            'Lab_Test': 0,
+            'Confirmed': 0,
+            'Recovered': 0,
+            'Death': 0
+        }
     return latest24
