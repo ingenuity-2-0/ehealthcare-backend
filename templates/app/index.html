@@ -149,10 +149,10 @@
                                     Hospital</button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-custom-white" href="./ListOfDoctor.html">Doctor List</a>
+                                <a class="nav-link text-custom-white" href="{% url 'doctor:all_doctor_list' %}">Doctor List</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-custom-white" href="./ListOfHospital.html">Hospital list</a>
+                                <a class="nav-link text-custom-white" href="./ListOfHospital.html">Hospital List</a>
                             </li>
                         </ul>
                     </div>
@@ -226,13 +226,13 @@
                                     <!-- deases-search-start -->
                                     <div class="row mt-5">
                                         <div class="col-3 d-none d-lg-block d-xl-block">
-                                            <img class="img-fluid" src="./assets/images/medicine-1.svg" alt="">
+                                            <img class="img-fluid" src="{% static './assets/images/medicine-1.svg' %}" alt="">
                                         </div>
                                         <div class="col-12 col-md-12 col-lg-6 border border-5 border-light">
                                             <h3 class="text-center my-3">Find Doctor Based on Symptoms</h3>
                                                 <form action="{% url 'doctor:symptoms_search' %}" method="post">
                                                 {% csrf_token %}
-                                                <textarea name='tags2' placeholder='write and select disease name'
+                                                <textarea name='tags2' placeholder='write and select symptoms'
                                                     class="border border-primary">
                                                 </textarea>
                                                 <div class="d-flex justify-content-end">
@@ -242,7 +242,7 @@
                                             </form>
                                         </div>
                                         <div class="col-3 d-none d-lg-block d-xl-block">
-                                            <img class="img-fluid" src="./assets/images/medicine-2.svg" alt="">
+                                            <img class="img-fluid" src="{% static './assets/images/medicine-2.svg' %}" alt="">
                                         </div>
 
                                     </div>
