@@ -152,7 +152,7 @@
                                 <a class="nav-link text-custom-white" href="{% url 'doctor:all_doctor_list' %}">Doctor List</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-custom-white" href="./ListOfHospital.html">Hospital List</a>
+                                <a class="nav-link text-custom-white" href="{% url 'hospital:hospital_list' %}">Hospital List</a>
                             </li>
                         </ul>
                     </div>
@@ -257,14 +257,15 @@
                             <div class="row d-flex align-items-center">
                                 <div class="col-12 col-lg-6">
                                     <h3 class="mb-5">Search Hospital</h3>
-                                    <form autocomplete="off" action="/">
+                                    <form autocomplete="off" action="{% url 'hospital:search_hospital' %}" method="post">
+                                        {% csrf_token %}
 
                                         <div class="mb-3">
                                             <div class="autocomplete w-100">
                                                 <label for="setectCity" class="form-label">Select
                                                     City</label>
                                                 <input id="cityField2" type="text" class="form-control"
-                                                    placeholder="eg. dhaka">
+                                                    placeholder="eg. dhaka" name="d_city">
                                             </div>
                                         </div>
 
@@ -272,7 +273,7 @@
                                             <div class="autocomplete w-100">
                                                 <label for="hospitalField" class="form-label">Select Hospital</label>
                                                 <input id="hospitalField" type="text" class="form-control"
-                                                    placeholder="eg. ibn sina">
+                                                    placeholder="eg. ibn sina" name="d_name">
                                             </div>
                                         </div>
 

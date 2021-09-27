@@ -1,41 +1,32 @@
 {% load static %}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="{% static './assets/images/favicon.png' %}" type="image/gif" sizes="64x64">
     <link rel="shortcut icon" href="{% static './assets/images/favicon.png' %}" type="image/gif" sizes="64x64">
     <link rel="apple-touch-icon" href="{% static './assets/images/favicon.png' %}" type="image/gif">
-    <title>Doctor List | E-Health Care</title>
+
     <!-- Google Font CDN -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- main css -->
-    <link rel="stylesheet" href="{% static './assets/css/ListOfDoctor.css' %}">
-    <!-- js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#myInput").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-    </script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static './assets/css/HospitalProfile.css' %}">
+    <title>Hospital Profile | E-Health Care</title>
 </head>
 
 <body>
+
     <!-- Navbar-Start -->
     <div class="navbar-shadow">
         <div class="container">
@@ -126,92 +117,113 @@
     </div>
     <!-- Navbar-End -->
 
-    <!-- Start: Lista Productos Canito -->
-    <div style="margin-top:0px;">
+
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
+                    <div class="card user-card">
+                        <div class="card-header">
+                            <h5>Profile</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="user-image">
+                                <img src="/media/{{hospital_image}}" class="img-radius" alt="User-Profile-Image">
+                            </div>
+                            <h4 class="f-w-600 m-b-10">{{ hospital_name}}</h4>
+                            <p class="text-muted">{{ hospital_city }}</p>
+                            <ul class="list-unstyled activity-leval">
+                                <li class="active"></li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                            </ul>
 
-                    <img src="{% static './assets/images/searching-data.png' %}" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col d-xl-flex justify-content-xl-center">
-                    <span class="text-center search_txt">Doctor List</span>
-
-                    <!-- <form method="post" action="#"> -->
-                    <form action="#" class="search-bar">
-                        <input id="myInput" type="search" name="search" pattern=".*\S.*" required>
-                        <button class="search-btn" type="submit">
-                            <span>Search</span>
-                        </button>
-                    </form>
+                <div class="col-md-8">
+                    <div class="card user-card">
+                        <div class="card-header">
+                            <h4>Details</h4>
+                        </div>
+                        <div class="card-block">
+                            <div class="col-md-12">
+                                <div class="col-md-12">
+                                    <div class="full-address">
+                                        <p class="m-t-15 ">
+                                            {{ hospital_address }}
+                                        </p>
+                                    </div> <div class="row">
+                                        <div class="col-md-6">
+                                            <p>City:</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <P>{{ hospital_city }}</P>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <P>Number:</P>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p> {{ hospital_phone}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </form>
             </div>
         </div>
-        <section>
-            <div class="container">
-                <div class="col-12">
-                    <!-- Start: Data Table -->
-                    <table id="example" class="table table-striped table-bordered" cellspacing="0" width=100%><br>
-                        <thead>
-                        <tr class="Table_row">
-                            <th>Name</th>
-                            <th>Specialist</th>
-                            <th>City</th>
-                            <th>Hospital Name</th>
-                        </tr>
-                        </thead>
-                        <tbody id="myTable">
-                            <!-- for loop start  -->
-                        {% for x in context %}
-                        <tr class="Table_row_2">
-                            <td><a class="text-decoration-none" href="{% url 'doctor:doctor_detail' x.doctor_id %}">{{ x.doctor_name }}</a></td>
-                            <td>{{ x.specialist}} </td>
-                            <td>{{ x.city}}</td>
-                            <td><a class="text-decoration-none" href="{% url 'hospital:hospital_details' x.hospital_id %}">{{ x.hospital_name }}</a></td>
 
-                        </tr>
-                        {% endfor %}
-{#                            <tr>#}
-{#                                <td>Square hospital </td>#}
-{#                                <td>01855525808</td>#}
-{#                                <td>Jatrabari</td>#}
-{#                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quasi tempora quae#}
-{#                                    eligendi, qui laudantium! Animi magni voluptate modi doloribus!</td>#}
-{##}
-{#                            </tr>#}
-{#                            <tr>#}
-{#                                <td>Square hospital </td>#}
-{#                                <td>01855525808</td>#}
-{#                                <td>Jatrabari</td>#}
-{#                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quasi tempora quae#}
-{#                                    eligendi, qui laudantium! Animi magni voluptate modi doloribus!</td>#}
-{##}
-{#                            </tr>#}
-{#                            <tr>#}
-{#                                <td>Square hospital </td>#}
-{#                                <td>01800025808</td>#}
-{#                                <td>Jatrabari</td>#}
-{#                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quasi tempora quae#}
-{#                                    eligendi, qui laudantium! Animi magni voluptate modi doloribus!</td>#}
-{##}
-{#                            </tr>#}
-{#                            <tr>#}
-{#                                <td>Square hospital </td>#}
-{#                                <td>01955525808</td>#}
-{#                                <td>Jatrabari</td>#}
-{#                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quasi tempora quae#}
-{#                                    eligendi, qui laudantium! Animi magni voluptate modi doloribus!</td>#}
-{##}
-{#                            </tr>#}
-                            <!-- for loop end -->
-                        </tbody>
-                    </table><!-- End: Data Table -->
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                {% for r in related_hospital %}
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card doctorcard">
+                        <img src="/media/{{ r.r_image }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="{% url 'hospital:hospital_details' r.r_id %}"><h5 class="card-title">{{ r.r_name}}</h5></a>
+                            <p class="card-text">{{ r.r_city}}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+{#                <div class="col-6 col-md-4 col-lg-3">#}
+{#                    <div class="card doctorcard">#}
+{#                        <img src="{% static './assets/images/Hospital-2.jpg' %}" class="card-img-top" alt="...">#}
+{#                        <div class="card-body">#}
+{#                            <h5 class="card-title">Dr. Atila Rahman</h5>#}
+{#                            <p class="card-text">Dental Surgen</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-6 col-md-4 col-lg-3">#}
+{#                    <div class="card doctorcard">#}
+{#                        <img src="{% static './assets/images/Hospital-2.jpg' %}" class="card-img-top" alt="...">#}
+{#                        <div class="card-body">#}
+{#                            <h5 class="card-title">Dr. Atila Rahman</h5>#}
+{#                            <p class="card-text">Dental Surgen</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+                <div class="col-6 col-md-12 col-lg-3">
+                    <div>
+                        <h5 class="lookingDoctor">Looking for More Hospital?</h5>
+                        <a href="{% url 'hospital:hospital_list' %}"><button type="button" class="btn btn-outline-primary">All
+                                Hospital List >></button></a>
+                    </div>
+
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
 
     <!-- footer start -->
@@ -294,11 +306,13 @@
     </footer>
     <!-- footer end -->
 
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
+    <!-- Main JS -->
+    <!-- <script src="{% static './assets/css/script.js' %}"></script> -->
 </body>
 
 </html>

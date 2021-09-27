@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .getData import all_doctor_info, search_doctor_using_name, search_doctor_using_city, \
-search_doctor_using_name_city, search_doctor_using_symptoms
+    search_doctor_using_name_city, search_doctor_using_symptoms, doctor_information
 
 
 # Create your views here.
@@ -29,3 +29,11 @@ def symptoms_search(request):
 def all_doctor(request):
     doctor_list = all_doctor_info()
     return render(request, template_name='doctor/ListOfDoctor.html', context={'context': doctor_list})
+
+
+def doctor_details(request, doctor_id):
+    if doctor_id == "Nan":
+        return redirect('/')
+    doctor_info = doctor_information(doctor_id)
+
+    return render(request, template_name='doctor/DoctorProfile.html', context=doctor_info)
