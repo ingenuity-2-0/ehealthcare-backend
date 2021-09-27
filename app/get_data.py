@@ -62,3 +62,23 @@ def covid19_last24():
             'Death': 0
         }
     return latest24
+
+
+def covid19_api():
+    try:
+        data = requests.get('https://disease.sh/v3/covid-19/all')
+        d = data.json()
+        infected = d['cases']
+        deaths = d['deaths']
+        recovered = d['recovered']
+        tests = d['tests']
+        dict1 = {'infected': infected,
+                 'deaths': deaths,
+                 'recovered': recovered,
+                 'tests': tests}
+    except:
+        dict1 = {'infected': 0,
+                 'deaths': 0,
+                 'recovered': 0,
+                 'tests': 0}
+    return dict1

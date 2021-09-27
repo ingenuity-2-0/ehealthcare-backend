@@ -22,7 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls', namespace='app')),
     path('doctor/', include('doctor.urls', namespace='doctor')),
-    path('hospital/', include('hospital.urls', namespace='hospital'))
+    path('hospital/', include('hospital.urls', namespace='hospital')),
+    path('heart_checkup/', include('heart_checkup.urls', namespace='heart_checkup'))
 ]
 
 if settings.DEBUG:
