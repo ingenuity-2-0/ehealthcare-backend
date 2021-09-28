@@ -135,8 +135,8 @@
                                 <label class="form-label">Gender</label>
                                 <select class="form-select" name="gender">
                                     <option selected disabled>Select gender</option>
-                                    <option value="0">Male</option>
-                                    <option value="1">Female</option>
+                                    <option value="1">Male</option>
+                                    <option value="0">Female</option>
 {#                                    <option value="3">Other</option>#}
                                 </select>
                             </div>
@@ -149,13 +149,13 @@
                             <div class="col-6">
                                 <label class="form-label">Fasting blood sugar</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="fbs" value="yes">
+                                    <input class="form-check-input" type="radio" name="fbs" value="1">
                                     <label class="form-check-label">
                                         Gratter than 120 mg/dl
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="fbs" value="no" checked>
+                                    <input class="form-check-input" type="radio" name="fbs" value="0" checked>
                                     <label class="form-check-label">
                                         Less than 120 mg/dl
                                     </label>
@@ -165,13 +165,13 @@
                             <div class="col-6">
                                 <label class="form-label">Exercise induced angina</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exang1" checked>
+                                    <input class="form-check-input" type="radio" name="exang" value="1" checked>
                                     <label class="form-check-label">
                                         Yes
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exang2">
+                                    <input class="form-check-input" type="radio" name="exang" value="0">
                                     <label class="form-check-label">
                                         No
                                     </label>
@@ -181,14 +181,14 @@
                             <div class="col-12">
                                 <label class="form-label">Resting electrocardiographic results
                                 </label>
-                                <select class="form-select">
+                                <select class="form-select" name="restecg">
                                     <option selected disabled>Choose...</option>
-                                    <option value="1">Probable or definite left ventricular
+                                    <option value="0">Probable or definite left ventricular
                                         hypertrophy by Estes’ criteria
                                     </option>
-                                    <option value="2">Normal
+                                    <option value="1">Normal
                                     </option>
-                                    <option value="3">having ST-T wave abnormality (T wave inversions and/or ST
+                                    <option value="2">having ST-T wave abnormality (T wave inversions and/or ST
                                         elevation or
                                         depression of > 0.05 mV)
                                     </option>
@@ -198,32 +198,32 @@
                             <div class="col-md-5">
                                 <label class="form-label">Resting blood pressure</label>
                                 <input type="number" placeholder="mm Hg on admission to the hospital"
-                                    class="form-control">
+                                    class="form-control" name="trestbps">
                             </div>
 
                             <div class="col-md-3">
                                 <label class="form-label">Chest pain type</label>
                                 <select class="form-select" name="cp">
-                                    <option value="1">Asymptomatic
+                                    <option value="0">Asymptomatic
                                     </option>
-                                    <option value="2">Atypical angina
+                                    <option value="1">Atypical angina
                                     </option>
-                                    <option value="3">Non-anginal pain
+                                    <option value="2">Non-anginal pain
                                     </option>
-                                    <option value="4">Typical angina
+                                    <option value="3">Typical angina
                                     </option>
                                 </select>
                             </div>
 
                             <div class="col-md-4">
                                 <label class="form-label">Heart rate achieved</label>
-                                <input type="number" placeholder="Insert maximum value" class="form-control" name="hr">
+                                <input type="number" placeholder="Insert maximum value" class="form-control" name="thalach">
                             </div>
 
                             <div class="col-12">
                                 <label class="form-label">Blood disorder (Thalassemia)
                                 </label>
-                                <select class="form-select">
+                                <select class="form-select" name="thal">
                                     <option selected disabled>Choose...</option>
                                     <option value="1">Fixed defect (no blood flow in some part of the heart)
 
@@ -239,15 +239,15 @@
                             <div class="col-md-6">
                                 <label class="form-label">Slope of peak exercise ST segment</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="slope" value="1">
+                                    <input class="form-check-input" type="radio" name="slope" value="0" checked>
                                     <label class="form-check-label">Downsloping</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="slope" value="2" checked>
+                                    <input class="form-check-input" type="radio" name="slope" value="1">
                                     <label class="form-check-label">Flat</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="slope" value="3">
+                                    <input class="form-check-input" type="radio" name="slope" value="2">
                                     <label class="form-check-label">Upsloping</label>
                                 </div>
                             </div>
@@ -255,15 +255,15 @@
                             <div class="col-md-6">
                                 <label class="form-label">Major vessels (0-3) colored by fluoroscopy</label><br>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="ca" value="1">
+                                    <input class="form-check-input" type="radio" name="ca" value="0">
                                     <label class="form-check-label">0</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="ca" value="2" checked>
+                                    <input class="form-check-input" type="radio" name="ca" value="1" checked>
                                     <label class="form-check-label">1</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="ca" value="3">
+                                    <input class="form-check-input" type="radio" name="ca" value="2">
                                     <label class="form-check-label">2</label>
                                 </div>
                                 <div class="form-check form-check-inline">
@@ -274,13 +274,13 @@
 
                             <div class="col-md-6">
                                 <label class="form-label">Cholesterol measurement</label>
-                                <input type="number" placeholder="mg/dl" class="form-control">
+                                <input type="number" placeholder="mg/dl" class="form-control" name="chol">
                             </div>
 
                             <div class="col-md-6">
                                 <label class="form-label">ST depression induced by exercise relative to rest </label>
                                 <input type="number" placeholder="‘ST’ relates to positions on the ECG plot."
-                                    class="form-control" name="st">
+                                    class="form-control" name="oldpeak" step=".01" min="0">
                             </div>
 
                             <div class="col-12">
