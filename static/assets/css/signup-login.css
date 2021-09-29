@@ -55,3 +55,9 @@ section {
 		margin-top: 3rem;
 	}
 }
+
+
+/* test */
+input[type=file]{
+padding:10px;
+background:#474646;}

@@ -36,7 +36,7 @@ def all_doctor_info():
 def search_doctor_using_name(name):
     doctors = Doctor.objects.filter(name__iregex=name)
     if len(doctors) == 0:
-        doctors = Doctor.objects.filter(specialist_name__name__iregex=name)
+        doctors = Doctor.objects.filter(specialist_name__name=name)
     doctor_list = []
     for x in doctors:
         doctor_id = x.doctor_id

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'hospital',
     'symptoms',
     'heart_checkup',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -145,3 +146,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # for iframe
 X_FRAME_OPTIONS = 'SAMEORIGIN'
+LOGIN_REDIRECT_URL = 'home'
+
+LOGIN_URL = 'login'

@@ -58,60 +58,63 @@
                                 <a class="nav-link" aria-current="page" href="#aboutUs">About Us</a>
                             </li>
                         </ul>
-                        <!-- Login-Button -->
-                        <a href="./signup.html"><button class="btn px-4">Login</button></a>
-                        <a href="./signup.html"><button class="btn signup-btn px-4">Sign Up</button></a>
-
+                        {% if user.is_authenticated %}
                         <!-- User-Profile -->
-{#                        <div class="d-flex align-items-center btn-group">#}
-{#                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"#}
-{#                                aria-expanded="false">#}
-{#                                <img class="user-img" src="./assets/images/user.png" alt="user">#}
-{#                                <span class="user-first-name">Shahriar</span>#}
-{#                            </button>#}
-{#                            <ul class="dropdown-menu">#}
-{#                                <li><a class="dropdown-item" href="PublicProfile.html">profile</a></li>#}
-{#                                <li>#}
-{#                                    <hr class="dropdown-divider">#}
-{#                                </li>#}
-{#                                <li>#}
-{#                                    <a type="button" class="btn dropdown-item" data-bs-toggle="modal"#}
-{#                                        data-bs-target="#staticBackdrop">#}
-{#                                        Log Out#}
-{#                                    </a>#}
-{#                                </li>#}
-{#                            </ul>#}
-{##}
-{#                            <!-- Log out Popup -->#}
-{#                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"#}
-{#                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"#}
-{#                                aria-hidden="true">#}
-{#                                <div class="modal-dialog">#}
-{#                                    <div class="modal-content modal-wrapper border-0">#}
-{#                                        <div class="modal-top">#}
-{#                                            <i class="danger-icon fas fa-exclamation-triangle"></i>#}
-{#                                            <div>#}
-{#                                                <h5 class="modal-heading">Log out from this session</h5>#}
-{#                                                <p class="modal-description">Are you sure you want to log out? All of#}
-{#                                                    your data#}
-{#                                                    will be temporary#}
-{#                                                    removed. You have to sign in again.</p>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                        <div class="modal-bottom">#}
-{#                                            <button type="button" class="btn btn-outline-primary mx-3"#}
-{#                                                data-bs-dismiss="modal">Cancel</button>#}
-{#                                            <a href="http://">#}
-{#                                                <button type="button" class="btn btn-custom-danger">#}
-{#                                                    Log out#}
-{#                                                </button>#}
-{#                                            </a>#}
-{#                                        </div>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </div>#}
-{##}
-{#                        </div>#}
+                        <div class="d-flex align-items-center btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img class="user-img" src="media/{{user.profile.image}}" alt="user">
+                                <span class="user-first-name">{{ user.first_name }}</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{% url 'users:profile' %}">profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a type="button" class="btn dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Log Out
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Log out Popup -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content modal-wrapper border-0">
+                                        <div class="modal-top">
+                                            <i class="danger-icon fas fa-exclamation-triangle"></i>
+                                            <div>
+                                                <h5 class="modal-heading">Log out from this session</h5>
+                                                <p class="modal-description">Are you sure you want to log out? All of
+                                                    your data
+                                                    will be temporary
+                                                    removed. You have to sign in again.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-bottom">
+                                            <button type="button" class="btn btn-outline-primary mx-3"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <a href="{% url 'users:logout' %}">
+                                                <button type="button" class="btn btn-custom-danger">
+                                                    Log out
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    {% else %}
+                        <!-- Login-Button -->
+                        <a href="{% url 'users:login' %}"><button class="btn px-4">Login</button></a>
+                        <a href="{% url 'users:signup' %}"><button class="btn signup-btn px-4">Sign Up</button></a>
+
+                    {% endif %}
                     </div>
                 </div>
             </nav>

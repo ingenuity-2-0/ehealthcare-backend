@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 import joblib
 import numpy as np
+from doctor.getData import search_doctor_using_name
 
 
 # Create your views here.
@@ -38,19 +38,8 @@ def checkup(request):
 
         if prediction[0] == 0:
             h = 'The Person does not have a Heart Disease'
+            doctor_list = search_doctor_using_name(name='Cardiology')
         else:
             h = 'The Person has Heart Disease'
-        # print(type(sex))
-        # print('age ' + str(age))
-        # print("fbs " + str(fbs))
-        # print('exang ' + str(exang))
-        # print('restecg ' + str(restecg))
-        # print('trestbps ' + str(trestbps))
-        # print('cp ' + str(cp))
-        # print('thalach ' + str(thalach))
-        # print('thal ' + str(thal))
-        # print('slope ' + str(slope))
-        # print('ca ' + str(ca))
-        # print('chol ' + str(chol))
-        # print('oldpeak ' + str(oldpeak))
-    return HttpResponse(h)
+            doctor_list = search_doctor_using_name(name='Medicine')
+    return render(request, template_name='doctor/ListOfDoctor.html', context={'context': doctor_list})

@@ -1,30 +1,30 @@
-// getdiseaseName();
-//
-// async function getdiseaseName() {
-// 	const jsondatas = await fetch("./assets/dataAPI.json");
-// 	const getData = await jsondatas.json();
-//
-// 	const diseases = getData.diseases;
-// 	const cities = getData.cities;
-// 	const doctorSpe = getData.doctorSpe;
-// 	const hospitals = getData.hospitals;
-//
-// 	autocomplete(document.getElementById("cityField"), cities);
-// 	autocomplete(document.getElementById("cityField2"), cities);
-// 	autocomplete(document.getElementById("doctorSpeField"), doctorSpe);
-// 	autocomplete(document.getElementById("hospitalField"), hospitals);
-//
-// 	let input = document.querySelector("textarea[name=tags2]"),
-// 		tagify = new Tagify(input, {
-// 			enforceWhitelist: true,
-// 			delimiters: null,
-// 			whitelist: diseases,
-// 			callbacks: {
-// 				add: console.log, // callback when adding a tag
-// 				remove: console.log, // callback when removing a tag
-// 			},
-// 		});
-// }
+getdiseaseName();
+
+async function getdiseaseName() {
+	const jsondatas = await fetch("./assets/dataAPI.json");
+	const getData = await jsondatas.json();
+
+	const diseases = getData.diseases;
+	const cities = getData.cities;
+	const doctorSpe = getData.doctorSpe;
+	const hospitals = getData.hospitals;
+
+	autocomplete(document.getElementById("cityField"), cities);
+	autocomplete(document.getElementById("cityField2"), cities);
+	autocomplete(document.getElementById("doctorSpeField"), doctorSpe);
+	autocomplete(document.getElementById("hospitalField"), hospitals);
+
+	let input = document.querySelector("textarea[name=tags2]"),
+		tagify = new Tagify(input, {
+			enforceWhitelist: true,
+			delimiters: null,
+			whitelist: diseases,
+			callbacks: {
+				add: console.log, // callback when adding a tag
+				remove: console.log, // callback when removing a tag
+			},
+		});
+}
 
 function autocomplete(inp, arr) {
 	var currentFocus;

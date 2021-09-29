@@ -23,7 +23,8 @@ urlpatterns = [
     path('', include('app.urls', namespace='app')),
     path('doctor/', include('doctor.urls', namespace='doctor')),
     path('hospital/', include('hospital.urls', namespace='hospital')),
-    path('heart_checkup/', include('heart_checkup.urls', namespace='heart_checkup'))
+    path('heart_checkup/', include('heart_checkup.urls', namespace='heart_checkup')),
+    path('users/', include('users.urls', namespace='users'))
 ]
 
 if settings.DEBUG:
