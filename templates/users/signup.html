@@ -66,10 +66,14 @@
                             <!-- demo  Start-->
                             <div class="row ">
                                 <div class="col-12 col-md-6 col-lg-6 mt-3">
+                                    <label class="form-label">Username</label>
+                                    <input type="text" class="form-control" placeholder="Username" value="{{ username }}" aria-describedby="User Name" name="username">
+                                    <div class="form-text text-danger">{{ message_from_username }}</div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 mt-3">
                                     <label class="form-label">Email address</label>
-                                    <input type="email" class="form-control" placeholder="yourmail@gmail.com" aria-describedby="emailHelp" name="email">
-                                    <div class="form-text text-danger">{{ message_from_email }}
-                            </div>
+                                    <input type="email" class="form-control" placeholder="yourmail@gmail.com" value="{{ email }}" aria-describedby="emailHelp" name="email">
+                                    <div class="form-text text-danger">{{ message_from_email }}</div>
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-6 mt-3">
                                     <label class="form-label">Phone Number</label>
