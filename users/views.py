@@ -16,7 +16,7 @@ def user_signup(request):
         phone = request.POST['phone']
         password1 = request.POST['password1']
         password2 = request.POST['password2']
-        image = request.POST['image']
+        image = request.FILES['image']
         phone = int(phone)
         if password1 != password2:
             message = {
@@ -87,6 +87,7 @@ def user_logout(request):
     return redirect('app:home')
 
 
+@login_required(login_url='users:login')
 def profile(request):
     first_name = request.user.first_name
     last_name = request.user.last_name

@@ -33,7 +33,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{% url 'app:home' %}">
                         <img src="{% static './assets/images/logo.svg' %}" alt="" width="75%" height="auto">
                     </a>
 
@@ -45,7 +45,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" aria-current="page" href="{% url 'app:home' %}">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="{% url 'heart_checkup:heart_checkup' %}">Heart Checkup</a>
@@ -55,7 +55,7 @@
                                         class="text-danger">Covid-19</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#aboutUs">About Us</a>
+                                <a class="nav-link" aria-current="page" href="{% url 'app:home' %}#aboutUs">About Us</a>
                             </li>
                         </ul>
                         {% if user.is_authenticated %}
@@ -63,11 +63,11 @@
                         <div class="d-flex align-items-center btn-group">
                             <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                <img class="user-img" src="media/{{user.profile.profile_picture}}" alt="user">
+                                <img class="user-img" src="{{user.profile.profile_picture.url}}" alt="user">
                                 <span class="user-first-name">{{ user.first_name }}</span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{% url 'users:profile' %}">profile</a></li>
+                                <li><a class="dropdown-item" href="{% url 'users:profile' %}">Profile</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -441,20 +441,20 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer-about">
                         <div class="footer-logo">
-                            <a href="index.html"><img src="{% static './assets/images/logo-white.svg' %}" alt=""></a>
+                            <a href="{% url 'app:home' %}"><img src="{% static './assets/images/logo-white.svg' %}" alt=""></a>
                         </div>
                         <p>E-Health Care is a dream that turned into a tech based startup, a business with a great
                             purpose to create positive impacts in peoples' lives.</p>
 
                         <!-- Add Social Icon -->
                         <div>
-                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-facebook"
+                            <a href="#" target="_blank"><span class="social-icons"><i class="fab fa-facebook"
                                         style="color:#30629d;"></i></span></a>
-                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-twitter"
+                            <a href="#" target="_blank"><span class="social-icons"><i class="fab fa-twitter"
                                         style="color:#00A7E6;"></i></span></a>
-                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-linkedin"
+                            <a href="#" target="_blank"><span class="social-icons"><i class="fab fa-linkedin"
                                         style="color:#0073B1;"></i></span></a>
-                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-instagram"
+                            <a href="#" target="_blank"><span class="social-icons"><i class="fab fa-instagram"
                                         style="color:#D32C86;"></i></span></a>
                         </div>
 
@@ -504,7 +504,7 @@
                     <div class="footer-copyright-text">
                         <p>&copy; Copyright <script>
                                 document.write(new Date().getFullYear());
-                            </script> | <a href="index.html"> E-Health Care </a> | All Rights Reserved</p>
+                            </script> | <a href="{% url 'app:home' %}"> E-Health Care </a> | All Rights Reserved</p>
                     </div>
                 </div>
             </div>

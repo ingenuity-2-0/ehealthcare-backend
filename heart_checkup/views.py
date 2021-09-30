@@ -2,13 +2,17 @@ from django.shortcuts import render
 import joblib
 import numpy as np
 from doctor.getData import search_doctor_using_name
+from django.conf import settings
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
+@login_required(login_url='users:login')
 def heart_checkup(request):
     return render(request, template_name='heart_checkup/heart-checkup.html')
 
 
+@login_required(login_url='users:login')
 def checkup(request):
     if request.method == 'POST':
         sex = request.POST['gender']
