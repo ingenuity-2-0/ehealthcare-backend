@@ -228,10 +228,6 @@ section {
 	text-align: center;
 	color: white;
 }
-.table-striped > tbody > tr:nth-of-type(odd) {
-	background-color: #0076bc;
-	color: white;
-}
 .search_txt {
 	color: black;
 	position: absolute;
