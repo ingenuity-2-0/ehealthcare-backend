@@ -6,7 +6,9 @@ from .get_data import all_hospital_information, extract_information, hospital_de
 # Create your views here.
 def all_hospital(request):
     hospital_list = all_hospital_information()
-    return render(request, template_name='hospital/ListOfHospital.html', context={'context': hospital_list})
+    number_of_hospital = len(hospital_list)
+    message = 'We get <strong style="color: #be2323" >' + str(number_of_hospital) + '</strong> hospitals for you.'
+    return render(request, template_name='hospital/ListOfHospital.html', context={'message': message, 'context': hospital_list})
 
 
 def search_hospital(request):
@@ -24,7 +26,10 @@ def search_hospital(request):
             hospital_list = extract_information(hospitals)
         else:
             hospital_list = all_hospital_information()
-    return render(request, template_name='hospital/ListOfHospital.html', context={'context': hospital_list})
+
+    number_of_hospital = len(hospital_list)
+    message = 'We get <strong style="color: #be2323" >' + str(number_of_hospital) + '</strong> hospitals for you.'
+    return render(request, template_name='hospital/ListOfHospital.html', context={'message': message, 'context': hospital_list})
 
 
 def hospital_details(request, hospital_id):

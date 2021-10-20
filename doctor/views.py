@@ -16,19 +16,25 @@ def name_search(request):
             doctor_list = search_doctor_using_city(city=city)
         else:
             doctor_list = all_doctor_info()
-    return render(request, template_name='doctor/ListOfDoctor.html', context={'context': doctor_list})
+    number_of_doctors = len(doctor_list)
+    message = 'We get <strong style="color: #be2323" >' + str(number_of_doctors) + '</strong> doctors for you'
+    return render(request, template_name='doctor/ListOfDoctor.html', context={'message': message, 'context': doctor_list})
 
 
 def symptoms_search(request):
     if request.method == 'POST':
         data = request.POST['tags2']
         doctor_list = search_doctor_using_symptoms(data)
-    return render(request, template_name='doctor/ListOfDoctor.html', context={'context': doctor_list})
+    number_of_doctors = len(doctor_list)
+    message = 'We get <strong style="color: #be2323" >' + str(number_of_doctors) + '</strong> doctors for you'
+    return render(request, template_name='doctor/ListOfDoctor.html', context={'message': message, 'context': doctor_list})
 
 
 def all_doctor(request):
     doctor_list = all_doctor_info()
-    return render(request, template_name='doctor/ListOfDoctor.html', context={'context': doctor_list})
+    number_of_doctors = len(doctor_list)
+    message = 'We get <strong style="color: #be2323" >' + str(number_of_doctors) + '</strong> doctors for you'
+    return render(request, template_name='doctor/ListOfDoctor.html', context={'message': message, 'context': doctor_list})
 
 
 def doctor_details(request, doctor_id):
