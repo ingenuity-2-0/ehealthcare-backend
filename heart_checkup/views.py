@@ -38,12 +38,34 @@ def checkup(request):
         # reshape the numpy array as we are predicting for only on instance
         predict_data_reshaped = predict_data_as_numpy_array.reshape(1, -1)
         prediction = model.predict(predict_data_reshaped)
-        print(prediction)
+        # print(prediction)
 
         if prediction[0] == 0:
             h = 'The Person does not have a Heart Disease'
             doctor_list = search_doctor_using_name(name='Cardiology')
+            message = 'We found <strong style="color: #be2323" >' + 'problem in you heart' + '</strong> please ' \
+                                                                                             'consult with ' \
+                                                                                             'doctor.<br>Here is list ' \
+                                                                                             'of doctor you can ' \
+                                                                                             'consult. '
+            context = {
+                'message': message,
+                'context': doctor_list
+            }
         else:
             h = 'The Person has Heart Disease'
             doctor_list = search_doctor_using_name(name='Medicine')
-    return render(request, template_name='doctor/ListOfDoctor.html', context={'context': doctor_list})
+            message = 'We do not found any <strong style="color: #be2323" >' + 'problem in you heart.' + '</strong> ' \
+                                                                                                         'Please ' \
+                                                                                                         'consult ' \
+                                                                                                         'with ' \
+                                                                                                         'doctor.<br' \
+                                                                                                         '>Here is ' \
+                                                                                                         'list of ' \
+                                                                                                         'doctor you ' \
+                                                                                                         'can consult. '
+            context = {
+                'message': message,
+                'context': doctor_list
+            }
+    return render(request, template_name='doctor/ListOfDoctor.html', context=context)

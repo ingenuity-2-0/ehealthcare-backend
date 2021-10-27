@@ -12,21 +12,22 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+load_dotenv()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(!3fl!-qkc+j1d+!rmd_@z!m26i(a7!9pice@ku!z-6mhqdjd_'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'ehealthcare.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [os.path.join(BASE_DIR, 'templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -88,11 +89,11 @@ DATABASES = {
                 'init_command': 'SET default_storage_engine=INNODB',
                 'sql_mode': 'traditional',
             },
-        'NAME': 'ehealthcare',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': '',
+        'NAME': os.getenv('DB_NAME'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
     }
 }
 
@@ -139,6 +140,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = 'STATIC_ROOT'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -150,11 +152,14 @@ LOGIN_REDIRECT_URL = 'home'
 
 LOGIN_URL = 'users:login'
 LOGIN_REDIRECT_URL = 'app:home'
-# AUTHENTICATION_BACKENDS = (
-#         'django.contrib.auth.backends.ModelBackend',
-#     )
-# AUTHENTICATION_BACKENDS = (
-#     'userena.backends.UserenaAuthenticationBackend',
-#     'guardian.backends.ObjectPermissionBackend',
-#     'django.contrib.auth.backends.ModelBackend',
-# )
+
+
+# # HTTPS settings
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+# SECURE_SSL_REDIRECT = True
+#
+# # HSTS settings
+# SECURE_HSTS_SECONDS = 31536000 # 1 year
+# SECURE_HSTS_PRELOAD = True
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
